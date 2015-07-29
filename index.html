@@ -1,1 +1,129 @@
-"Hello, World!" 
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="./css/normalize.min.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<div id="title-block" class="block title">
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1 class="cd-headline letters type">
+                <span>Hi, I'm <span class="cd-words-wrapper waiting">
+                    <b class="is-visible">Cyrus</b>
+            <b>Kir</b>
+            <b>Octav</b>
+            <b>@octav47</b>
+        </span>.
+                    <br>
+                    <br></span>
+            </h1>
+            <span class="subtitle">
+                    I'm an Russian developer, with a strong focus on unidirectional things. I'm currently living in Moscow and working as a web-developer.
+                    In my spare time, I like to experiment with new web tech and make some little things. You can check them out below!
+                    You can also tweet with me on <a href="http://twitter.com/octav47">Twitter</a>,
+                    code with me on <a href="http://github.com/octav47" target="_blank">GitHub</a>,
+                    <a href="http://plus.google.com/u/0/109972993043107364736" target="_blank">Google+</a>,
+                    & chat with me <a class="email" href="">via email</a>.
+                </span>
+            <br>
+            <a class="home-cta" href="#me">
+                Learn more about what I do<br>
+                <i class="fa fa-chevron-down"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<section id="me">
+    <div class="container">
+        <div class="row">
+            <div class="eight columns offset-by-two columns">
+                <p class="intro black">2015</p>
+            </div>
+        </div>
+        <div class="row">
+            <a href="./projects/newick/" style="cursor: pointer; text-decoration: none;">
+                <div class="eight columns offset-by-two columns">
+                    <div class="expertise-block">
+                        <i class="fa fa-tree purple"></i>
+                        <h4 class="title black">Newick.js</h4>
+
+                        <p class="summary" style="color: #93a4aa;">Tool for using newick-format</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Insert Footer -->
+<footer>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns">
+                    <a href="http://tribunsky.com" class="logo">Kir Tribunsky | Front-end Developer</a>
+
+                    <p class="made-by-me">Handmade by Kir Tribunsky &copy; 2015</p>
+
+                    <div class="social-links">
+                        <a href="http://vk.com/octav"><i class="fa fa-vk"></i></a>
+                        <a href="http://twitter.com/octav47"><i class="fa fa-twitter"></i></a>
+                        <a href="http://plus.google.com/u/0/109972993043107364736" target="_blank"><i
+                                class="fa fa-google-plus"></i></a>
+                        <a href="http://github.com/octav47" target="_blank"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/main.js"></script>
+<script src="./js/custom.min.js"></script>
+<script src="./js/modernizr.min.js"></script>
+<script>
+    $('.email').each(function (i, v) {
+        $(this).attr('href', 'mailto:forty' + 7 + '@' + 'yandex.ru');
+    })
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript"> (function (d, w, c) {
+    (w[c] = w[c] || []).push(function () {
+        try {
+            w.yaCounter31686791 = new Ya.Metrika({
+                id: 31686791,
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true,
+                trackHash: true
+            });
+        } catch (e) {
+        }
+    });
+    var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+        n.parentNode.insertBefore(s, n);
+    };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/watch.js";
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else {
+        f();
+    }
+})(document, window, "yandex_metrika_callbacks");</script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/31686791" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>
