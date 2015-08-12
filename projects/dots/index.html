@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="./css/dots.css">
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.11.4/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.4/themes/sunny/jquery-ui.css">
+</head>
+<body>
+
+<div class="stage one">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+</div>
+
+<div class="stage two">
+    <div class="dot"></div>
+    <div class="dot"></div>
+</div>
+<script>
+    $('.dot').draggable({
+        containment: 'parent'
+    });
+
+    var secondDots = $('.two > .dot');
+    var distances = {};
+    for (var i = 0; i < secondDots.length; i++) {
+        for (var j = 0; j < secondDots.length; j++) {
+            if (i != j) {
+
+            }
+        }
+    }
+</script>
+</body>
+</html>
