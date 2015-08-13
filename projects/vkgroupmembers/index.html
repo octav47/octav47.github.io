@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="./css/vkgroupmembers.css">
     <link rel="stylesheet" href="./css/animate.css">
 
-    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="../../js/jquery-2.1.4.min.js"></script>
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="./js/shuffle.js"></script>
+    <script src="./js/openapi.js"></script>
 </head>
 <body>
 <div class="paper">
@@ -21,23 +24,23 @@
 <div id="photos" class="member_avatar"></div>
 
 
-<script>
-    setTimeout(function () {
-        $('.paper span:nth-child(1)').attr('style', 'display: inline !important').addClass('bounceInDown animated');
-    }, 2000);
-    setTimeout(function () {
-        $('.paper span:nth-child(2)').attr('style', 'display: inline !important').addClass('bounceInDown animated');
-    }, 3000);
-    setTimeout(function () {
-        $('.paper span:nth-child(3)').attr('style', 'display: inline !important').addClass('tada animated');
-    }, 5000);
-    setTimeout(function () {
-        $('.paper span:nth-child(4)').attr('style', 'display: inline !important').addClass('rollIn animated');
-    }, 7000);
-</script>
-<script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
 <script src="./js/getMembers.js"></script>
-<script src="../../js/modernizr.min.js"></script>
+<script>
+    $(function () {
+        setTimeout(function () {
+            $('.paper span:nth-child(1)').attr('style', 'display: inline !important').addClass('bounceInDown animated');
+        }, 2000);
+        setTimeout(function () {
+            $('.paper span:nth-child(2)').attr('style', 'display: inline !important').addClass('bounceInDown animated');
+        }, 3000);
+        setTimeout(function () {
+            $('.paper span:nth-child(3)').attr('style', 'display: inline !important').addClass('tada animated');
+        }, 5000);
+        setTimeout(function () {
+            $('.paper span:nth-child(4)').attr('style', 'display: inline !important').addClass('rollIn animated');
+        }, 7000);
+    });
+</script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript"> (function (d, w, c) {
     (w[c] = w[c] || []).push(function () {
@@ -65,6 +68,13 @@
         f();
     }
 })(document, window, "yandex_metrika_callbacks");</script>
+<script>
+    $(function () {
+        if (navigator.userAgent.indexOf("Safari") > -1) {
+//            getMembers(86646022);
+        }
+    });
+</script>
 <noscript>
     <div><img src="https://mc.yandex.ru/watch/31686791" style="position:absolute; left:-9999px;" alt=""/></div>
 </noscript>
