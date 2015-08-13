@@ -6,14 +6,35 @@
     <link rel="stylesheet" href="../../css/normalize.min.css">
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/vkgroupmembers.css">
+    <link rel="stylesheet" href="./css/animate.css">
 
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 </head>
 <body>
+<div class="paper">
+    <span>Join</span>
+    <span>Radio Hustle Family</span>
+    <span><a href="http://vk.com/radio_hustle">click me</a></span>
+    <span>#radiohustle</span>
+</div>
+<div id="photos" class="member_avatar"></div>
 
-<div class="group_info"></div>
 
-
+<script>
+    setTimeout(function () {
+        $('.paper span:nth-child(1)').attr('style', 'display: inline !important').addClass('bounceInDown animated');
+    }, 2000);
+    setTimeout(function () {
+        $('.paper span:nth-child(2)').attr('style', 'display: inline !important').addClass('bounceInDown animated');
+    }, 3000);
+    setTimeout(function () {
+        $('.paper span:nth-child(3)').attr('style', 'display: inline !important').addClass('tada animated');
+    }, 5000);
+    setTimeout(function () {
+        $('.paper span:nth-child(4)').attr('style', 'display: inline !important').addClass('rollIn animated');
+    }, 7000);
+</script>
 <script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
 <script src="./js/getMembers.js"></script>
 <script src="../../js/modernizr.min.js"></script>
