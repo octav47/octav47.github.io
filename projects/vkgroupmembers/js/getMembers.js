@@ -1,6 +1,6 @@
 $(function () {
     VK.init({
-        apiId: 654647 // ID вашего приложения VK
+        apiId: 4996717 // ID вашего приложения VK
     });
 
     var membersGroups = []; // массив участников группы
