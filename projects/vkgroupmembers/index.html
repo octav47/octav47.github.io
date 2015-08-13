@@ -23,7 +23,12 @@
 </div>
 <div id="photos" class="member_avatar"></div>
 
-
+<script>window.addEventListener("touchmove", function(event) {
+    if (!event.target.classList.contains('scrollable')) {
+        // no more scrolling
+        event.preventDefault();
+    }
+}, false);</script>
 <script src="./js/getMembers.js"></script>
 <script>
     $(function () {
