@@ -15,6 +15,7 @@ body {
     /*background-color: rgba(190, 255, 252, 0.7);*/
     background-color: rgba(41, 88, 86, 0.83);;
     z-index: 9000;
+    overflow: hidden;
 }
 
 .paper span {
