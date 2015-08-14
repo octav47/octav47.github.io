@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="./js/data.js"></script>
+
+    <link rel="stylesheet" href="../../css/normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel='stylesheet prefetch' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/6035/grid.css'>
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600'>
+    <link rel='stylesheet prefetch' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/6035/flexslider.css'>
+    <link rel='stylesheet prefetch' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/6035/icomoon-uikit-feb.css'>
+
+    <script src="../../js/jquery-2.1.4.min.js"></script>
+    <script src="../../js/modernizr.min.js"></script>
+    <script src="./js/dancers.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+    <script src="js/prefixfree.min.js"></script>
+
+    <style>
+        .ui-autocomplete-loading {
+            background: red;
+        }
+
+        .ui-autocomplete {
+            width: 300px;
+            font-size: 9pt;
+            max-height: 100px;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav class="nav btn-navbar grid_12">
+        <ul>
+            <li><a href="http://radio-hustle.com" class="btn active">Главная</a></li>
+            <li><a href="./index.html" class="btn">База танцоров</a></li>
+        </ul>
+    </nav>
+
+    <div class="grid_12">
+        <article class="post post-blog">
+            <a href="#" class="post-image" style="text-align: center;">
+                <span class="fa-stack fa-5x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-database fa-inverse fa-stack-1x"></i>
+                </span>
+            </a>
+
+            <div class="details">
+                <h2><a href="#">База танцоров</a></h2>
+
+                <p>
+                    Если Вы вдруг заметили, что какой-то турнир не был обработан и информация устарела, напишите мне,
+                    пожалуйста <a href="http://vk.com/octav">в контакте <i class="fa fa-external-link"></i></a>
+                    <br>
+                    <br>
+                    Дата обновления: 07.08.2015
+                    <br>
+                    Последний турнир: Летний Кубок Движения (Новосибирск)
+                </p>
+
+                <p>
+                    Введите ФИО или номер в базе АСХ (номер следует вводить с лидирующими нулями, например, 06472)
+                </p>
+
+                <p>
+                    <input id="search" class="autocomplete-input" type="text">
+                </p>
+
+                <div id="search-result">
+                    <img id="pic" class="dancer-avatar grid_2" src="http://radio-hustle.com/dancers/pics/no_avatar.jpg">
+                    <ul>
+                        <li>Номер: <span id="current-number"></span></li>
+                        <li>ФИО: <span id="current-name"></span></li>
+                        <li>Класс: <span class="current-class"></span></li>
+                        <li>B</li>
+                        <li>C</li>
+                        <li>D</li>
+                        <li>E</li>
+                        <li>Клуб</li>
+                    </ul>
+                    <section class="widget weather grid_2" style="float: right;">
+                        <header class="header header-tertiary">
+                            <h2><span class="current-class"></span></h2>
+                        </header>
+                    </section>
+                    <p class="story"></p>
+                </div>
+
+                <div>
+                    <a href="#" class="btn btn-primary btn-large btn-caps">Эта кнопка ничего не делает</a>
+                    <a href="#" class="btn btn-secondary btn-large btn-caps">И эта тоже. Пока.</a>
+                </div>
+            </div>
+        </article>
+    </div>
+</div>
+
+<script>
+    window.onload = function () {
+        $('#search').autocomplete({
+            source: data,
+            select: function (event, ui) {
+                $.ajax({
+                    url: './ajax/' + ui.item.value.split(' ')[0] + '.json',
+                    type: 'GET',
+                    beforeSend: function () {
+                        $('#search-result').slideUp('fast');
+                        console.log('before load');
+                    },
+                    success: function (data) {
+                        setInfo(data);
+                        setAdditionalInfo(data.id);
+                        console.log('success');
+                    },
+                    complete: function () {
+                        $('#search-result').slideDown('slow');
+                        console.log('complete');
+                    }
+                })
+            },
+            minLength: 2
+        });
+    };
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript"> (function (d, w, c) {
+    (w[c] = w[c] || []).push(function () {
+        try {
+            w.yaCounter31686791 = new Ya.Metrika({
+                id: 31686791,
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true,
+                trackHash: true
+            });
+        } catch (e) {
+        }
+    });
+    var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+        n.parentNode.insertBefore(s, n);
+    };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/watch.js";
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else {
+        f();
+    }
+})(document, window, "yandex_metrika_callbacks");</script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/31686791" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>
