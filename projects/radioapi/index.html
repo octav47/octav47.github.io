@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]>
+<html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]>
+<html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Hustle Sport Association Points Calculator">
+    <title>Radio Hustle | HSA Calc</title>
+
+    <!-- How viewports work: http://t.co/dKP3o1e -->
+    <!--<meta name="HandheldFriendly" content="True">-->
+    <!--<meta name="MobileOptimized" content="320">-->
+    <!--<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">-->
+
+    <!-- Windows/IE font smoothing -->
+    <meta http-equiv="cleartype" content="on">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+
+    <meta name="Cache-Control" content="no-cache"/>
+    <!-- Use latest IE randering angine and switch on chrome Frame if available -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="shortcut icon" href="/img/base/favicon.ico"/>
+    <link rel="apple-touch-icon-precomposed"
+          href="http://etchapps.com/img/base/apple-touch-icon-57x57-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="http://etchapps.com/img/base/apple-touch-icon-72x72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="http://etchapps.com/img/base/apple-touch-icon-114x114-precomposed.png"/>
+    <link rel="stylesheet" href="../css/liMarquee.css">
+    <!-- Ability Sniffing -->
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="js/s.js"></script>
+    <script>
+        $(window).load(function () {
+            $('.str_wrap').liMarquee();
+        });
+    </script>
+    <script type="text/javascript">
+        function checkValues(type, place, competitors) {
+            if (type == "pairs") {
+                return place > 0 && place <= 151 && competitors >= 3 && competitors <= 151;
+            }
+            if (type == "dnd") {
+                return place > 0 && place <= 227 && competitors >= 3 && competitors <= 227;
+            }
+        }
+
+        function isInt(n) {
+            return Number(n) === n && n % 1 === 0;
+        }
+
+        function c(x) {
+            console.log(x);
+        }
+
+        function calc() {
+            var radios = document.getElementsByName('contest');
+            var type = "";
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                    if (radios[i].value == "pairs") {
+                        type = "pairs";
+                        break;
+                    }
+                    if (radios[i].value == "dnd") {
+                        type = "dnd";
+                        break;
+                    }
+                }
+            }
+            if (type != "") {
+                $.get(type + ".txt", function (data) {
+                    var place = parseInt(document.getElementById("place").value);
+                    var competitors = parseInt(document.getElementById("competitors").value);
+                    c(place);
+                    c(competitors);
+                    if (!isNaN(place) && !isNaN(competitors)) {
+                        if (place <= competitors) {
+                            if (checkValues(type, place, competitors)) {
+                                var tableTmp = data.split("\n");
+                                var places = tableTmp[0].split(" ");
+                                var currentPlaceIndex = 0;
+                                for (var i = 0; i < places.length; i++) {
+                                    //                            c(places[i] + " , " + place + ": " + (places[i] - place));
+                                    if (places[i] - competitors <= 0) {
+                                        currentPlaceIndex = i;
+                                    } else {
+                                        break;
+                                    }
+                                }
+                                $('#placeSpan').text(place);
+                                $('#competitorsSpan').text(competitors);
+                                var w = "";
+                                if (type == "pairs") {
+                                    w = "Пары";
+                                }
+                                if (type == "dnd") {
+                                    w = "ДнД";
+                                }
+                                $('#contestSpan').text(w);
+                                var indexPlace = (place < 75) ? place : 76;
+                                var tmp = tableTmp[indexPlace].split(" ");
+                                tmp.push(0);
+                                var currentPoints = tmp[currentPlaceIndex];
+                                $('#pointsSpan').text(currentPoints);
+                                $('#results').show("fast");
+                            } else {
+                                window.alert("Входные данные выходят за установленные АСХ границы!");
+                            }
+                        } else {
+                            window.alert("Ваше место больше числа участников!");
+                        }
+                    } else {
+                        window.alert("Входные данные не числового формата!");
+                    }
+                });
+            }
+        }
+    </script>
+
+    <script type="text/javascript" src="../js/simple-slider.min.js"></script>
+    <link rel="stylesheet" href="../css/simple-slider.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/simple-slider-volume.css" type="text/css"/>
+
+
+    <!--[if (IE 7)]>
+    <link rel="stylesheet" href="/css/fallback/icons-ie7.1389634668.css">
+    <![endif]-->
+
+</head>
+<body>
+
+<div class="main-container">
+    <!-- HEADER -->
+    <header class="block">
+        <ul class="header-menu horizontal-list">
+            <li>
+                <a class="header-menu-tab" href="http://radio-hustle.com" target="_blank"><span class="icon fontawesome-info-sign scnd-font-color"></span>BETA
+                    version</a>
+            </li>
+            <div class="profile-menu">
+                <span class="scnd-font-color title">RADIO HUSTLE</span>
+                <span class="icon fontawesome-music scnd-font-color"></span>
+            </div>
+        </ul>
+    </header>
+    <div class="left-container container">
+        <div class="block"> <!-- LOADING (RIGHT-CONTAINER) -->
+            <h2 class="titular" style="background: #35aadc"><span class="icon fontawesome-info-sign"></span> Info</h2>
+
+            <div class="tweet">
+                <p>
+                    Теперь у Radio Hustle есть API, текущая версия: 0.2.1
+                </p>
+                <p style="padding: 0 30px 0">
+                    Например, пусть в RS участвовало 70 человек. Ваш класс — RS.
+                    Вы заняли 20-ое место, обойдя 30 участников с классом RS и 20 с классом Beginner, тогда считается, что
+                    Вы заняли 20 место из 50.
+                </p>
+                <p style="padding: 0 30px 30px">
+                    Если Вы выступаете по претендентству, то не учитаются участники одного с Вами классами.
+                    Например, в Main участвовало 30 человек, Ваш класс RS. Вы заняли 10 место, обойдя 10 участников класса 			Main
+                    и 10 участников класса RS, тогда считается, что Вы заняли 10 место из 20.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end main-container -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript"> (function (d, w, c) {
+    (w[c] = w[c] || []).push(function () {
+        try {
+            w.yaCounter31686791 = new Ya.Metrika({
+                id: 31686791,
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true,
+                trackHash: true
+            });
+        } catch (e) {
+        }
+    });
+    var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+        n.parentNode.insertBefore(s, n);
+    };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/watch.js";
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else {
+        f();
+    }
+})(document, window, "yandex_metrika_callbacks");</script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/31686791" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+
+</html>
