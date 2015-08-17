@@ -6,14 +6,21 @@
         window.RadioAPI = RadioAPI;
     }
 
-    RadioAPI.getUser = function (userID) {
+    RadioAPI.getUser = function (userID, async, callBackSuccess, callBackError) {
         var userIDString = userID + '';
         while (userIDString.length < 5) {
             userIDString = '0' + userIDString;
         }
-        var user = {};
 
         var xmlhttp;
+
+        callBackSuccess = callBackSuccess || function (a) {
+                console.log(a);
+            };
+
+        callBackError = callBackError || function (a) {
+                console.log(a);
+            };
 
         if (window.XMLHttpRequest) {
             // code for IE7+, Firefox, Chrome, Opera, Safari
@@ -23,25 +30,41 @@
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
 
-        xmlhttp.onreadystatechange = function() {
-            if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
-                if(xmlhttp.status == 200){
-                    var ajaxResponse = JSON.parse(xmlhttp.response);
-                    ajaxResponse.story_classic = ajaxResponse.story_classic.replace(/<br><br>/gmi, ';');
-                    ajaxResponse.story_dnd = ajaxResponse.story_classic.replace(/<br><br>/gmi, ';');
-                    return ajaxResponse;
-                }
-                else if(xmlhttp.status == 400) {
-                    alert('There was an error 400')
-                }
-                else {
-                    alert('something else other than 200 was returned')
-                }
-            }
-        };
+        if (!async) {
+            xmlhttp.open('GET', 'http://octav47.github.io/projects/radiohustle/ajax/' + userIDString + '.json', false);
+            xmlhttp.send();
 
-        xmlhttp.open('GET', 'http://octav47.github.io/projects/radiohustle/ajax/' + userIDString + '.json', true);
-        xmlhttp.send();
+            if (xmlhttp.status == 200) {
+                var ajaxResponse = JSON.parse(xmlhttp.response);
+                ajaxResponse.story_classic = ajaxResponse.story_classic.replace(/<br><br>/gmi, ';');
+                ajaxResponse.story_dnd = ajaxResponse.story_classic.replace(/<br><br>/gmi, ';');
+                return ajaxResponse;
+            }
+            else if (xmlhttp.status == 400) {
+                callBackError(xmlhttp);
+            }
+            else {
+                callBackError(xmlhttp);
+            }
+        } else {
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+                    if (xmlhttp.status == 200) {
+                        var ajaxResponse = JSON.parse(xmlhttp.response);
+                        callBackSuccess(ajaxResponse);
+                    }
+                    else if (xmlhttp.status == 400) {
+                        callBackError(xmlhttp);
+                    }
+                    else {
+                        callBackError(xmlhttp);
+                    }
+                }
+            };
+
+            xmlhttp.open('GET', 'http://octav47.github.io/projects/radiohustle/ajax/' + userIDString + '.json', false);
+            xmlhttp.send();
+        }
     }
 
 })();

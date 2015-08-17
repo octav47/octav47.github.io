@@ -12,7 +12,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Hustle Sport Association Points Calculator">
-    <title>Radio Hustle | HSA Calc</title>
+    <title>Radio Hustle API</title>
 
     <!-- How viewports work: http://t.co/dKP3o1e -->
     <!--<meta name="HandheldFriendly" content="True">-->
@@ -31,108 +31,8 @@
 
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="shortcut icon" href="/img/base/favicon.ico"/>
-    <link rel="apple-touch-icon-precomposed"
-          href="http://etchapps.com/img/base/apple-touch-icon-57x57-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72"
-          href="http://etchapps.com/img/base/apple-touch-icon-72x72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114"
-          href="http://etchapps.com/img/base/apple-touch-icon-114x114-precomposed.png"/>
-    <link rel="stylesheet" href="../css/liMarquee.css">
-    <!-- Ability Sniffing -->
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="js/s.js"></script>
-    <script>
-        $(window).load(function () {
-            $('.str_wrap').liMarquee();
-        });
-    </script>
-    <script type="text/javascript">
-        function checkValues(type, place, competitors) {
-            if (type == "pairs") {
-                return place > 0 && place <= 151 && competitors >= 3 && competitors <= 151;
-            }
-            if (type == "dnd") {
-                return place > 0 && place <= 227 && competitors >= 3 && competitors <= 227;
-            }
-        }
-
-        function isInt(n) {
-            return Number(n) === n && n % 1 === 0;
-        }
-
-        function c(x) {
-            console.log(x);
-        }
-
-        function calc() {
-            var radios = document.getElementsByName('contest');
-            var type = "";
-            for (var i = 0; i < radios.length; i++) {
-                if (radios[i].checked) {
-                    if (radios[i].value == "pairs") {
-                        type = "pairs";
-                        break;
-                    }
-                    if (radios[i].value == "dnd") {
-                        type = "dnd";
-                        break;
-                    }
-                }
-            }
-            if (type != "") {
-                $.get(type + ".txt", function (data) {
-                    var place = parseInt(document.getElementById("place").value);
-                    var competitors = parseInt(document.getElementById("competitors").value);
-                    c(place);
-                    c(competitors);
-                    if (!isNaN(place) && !isNaN(competitors)) {
-                        if (place <= competitors) {
-                            if (checkValues(type, place, competitors)) {
-                                var tableTmp = data.split("\n");
-                                var places = tableTmp[0].split(" ");
-                                var currentPlaceIndex = 0;
-                                for (var i = 0; i < places.length; i++) {
-                                    //                            c(places[i] + " , " + place + ": " + (places[i] - place));
-                                    if (places[i] - competitors <= 0) {
-                                        currentPlaceIndex = i;
-                                    } else {
-                                        break;
-                                    }
-                                }
-                                $('#placeSpan').text(place);
-                                $('#competitorsSpan').text(competitors);
-                                var w = "";
-                                if (type == "pairs") {
-                                    w = "Пары";
-                                }
-                                if (type == "dnd") {
-                                    w = "ДнД";
-                                }
-                                $('#contestSpan').text(w);
-                                var indexPlace = (place < 75) ? place : 76;
-                                var tmp = tableTmp[indexPlace].split(" ");
-                                tmp.push(0);
-                                var currentPoints = tmp[currentPlaceIndex];
-                                $('#pointsSpan').text(currentPoints);
-                                $('#results').show("fast");
-                            } else {
-                                window.alert("Входные данные выходят за установленные АСХ границы!");
-                            }
-                        } else {
-                            window.alert("Ваше место больше числа участников!");
-                        }
-                    } else {
-                        window.alert("Входные данные не числового формата!");
-                    }
-                });
-            }
-        }
-    </script>
-
-    <script type="text/javascript" src="../js/simple-slider.min.js"></script>
-    <link rel="stylesheet" href="../css/simple-slider.css" type="text/css"/>
-    <link rel="stylesheet" href="../css/simple-slider-volume.css" type="text/css"/>
-
+    <script src="./js/radioapi.min.js"></script>
 
     <!--[if (IE 7)]>
     <link rel="stylesheet" href="/css/fallback/icons-ie7.1389634668.css">
@@ -146,8 +46,7 @@
     <header class="block">
         <ul class="header-menu horizontal-list">
             <li>
-                <a class="header-menu-tab" href="http://radio-hustle.com" target="_blank"><span class="icon fontawesome-info-sign scnd-font-color"></span>BETA
-                    version</a>
+                <a class="header-menu-tab" href="http://radio-hustle.com" target="_blank"><span class="icon fontawesome-info-sign scnd-font-color"></span></a>
             </li>
             <div class="profile-menu">
                 <span class="scnd-font-color title">RADIO HUSTLE</span>
@@ -164,9 +63,10 @@
                     Теперь у Radio Hustle есть API, текущая версия: 0.2.1
                 </p>
                 <p style="padding: 0 30px 0">
-                    Например, пусть в RS участвовало 70 человек. Ваш класс — RS.
-                    Вы заняли 20-ое место, обойдя 30 участников с классом RS и 20 с классом Beginner, тогда считается, что
-                    Вы заняли 20 место из 50.
+                    Подключить API:
+                    <code>
+                        <script src="http://octav47.github.io/projects/radioapi.min.js"></script>
+                    </code>
                 </p>
                 <p style="padding: 0 30px 30px">
                     Если Вы выступаете по претендентству, то не учитаются участники одного с Вами классами.
