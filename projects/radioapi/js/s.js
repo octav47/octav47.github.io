@@ -1,9 +1,23 @@
+/*
+ Radio Hustle API v0.2.1
+ */
+
 (function () {
 
-    var RadioAPI = {};
+    var RadioAPI = {},
+        host = 'http://radio-hustle.com/dancers_old/ajax/';
 
     if (!window.RadioAPI) {
         window.RadioAPI = RadioAPI;
+    }
+
+    function reformatJSON(ajaxResponse) {
+        function filterNotNull(element) {
+            return element != '';
+        }
+        ajaxResponse.story_classic = ajaxResponse.story_classic.split('<br><br>').filter(filterNotNull);
+        ajaxResponse.story_dnd = ajaxResponse.story_dnd.split('<br><br>').filter(filterNotNull);
+        return ajaxResponse;
     }
 
     RadioAPI.getUser = function (userID, async, callBackSuccess, callBackError) {
@@ -31,13 +45,12 @@
         }
 
         if (!async) {
-            xmlhttp.open('GET', 'http://octav47.github.io/projects/radiohustle/ajax/' + userIDString + '.json', true);
+            xmlhttp.open('GET', host + userIDString + '.json', false);
             xmlhttp.send();
 
             if (xmlhttp.status == 200) {
                 var ajaxResponse = JSON.parse(xmlhttp.response);
-                ajaxResponse.story_classic = ajaxResponse.story_classic.replace(/<br><br>/gmi, ';');
-                ajaxResponse.story_dnd = ajaxResponse.story_classic.replace(/<br><br>/gmi, ';');
+                ajaxResponse = reformatJSON(ajaxResponse);
                 return ajaxResponse;
             }
             else if (xmlhttp.status == 400) {
@@ -47,10 +60,12 @@
                 callBackError(xmlhttp);
             }
         } else {
+            xmlhttp.open('GET', host + userIDString + '.json', true);
             xmlhttp.onreadystatechange = function () {
                 if (xmlhttp.readyState == XMLHttpRequest.DONE) {
                     if (xmlhttp.status == 200) {
                         var ajaxResponse = JSON.parse(xmlhttp.response);
+                        ajaxResponse = reformatJSON(ajaxResponse);
                         callBackSuccess(ajaxResponse);
                     }
                     else if (xmlhttp.status == 400) {
@@ -61,8 +76,6 @@
                     }
                 }
             };
-
-            xmlhttp.open('GET', 'http://octav47.github.io/projects/radiohustle/ajax/' + userIDString + '.json', false);
             xmlhttp.send();
         }
     }
