@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!-- HTML5 Boilerplate -->
 <!--[if lt IE 7]>
@@ -31,8 +30,11 @@
 
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="shortcut icon" href="/img/base/favicon.ico"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.7/styles/default.min.css">
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//cdn.jsdelivr.net/highlight.js/8.7/highlight.min.js"></script>
     <script src="./js/radioapi.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 
     <!--[if (IE 7)]>
     <link rel="stylesheet" href="/css/fallback/icons-ie7.1389634668.css">
@@ -46,7 +48,8 @@
     <header class="block">
         <ul class="header-menu horizontal-list">
             <li>
-                <a class="header-menu-tab" href="http://radio-hustle.com" target="_blank"><span class="icon fontawesome-info-sign scnd-font-color"></span></a>
+                <a class="header-menu-tab" href="http://radio-hustle.com" target="_blank"><span
+                        class="icon fontawesome-info-sign scnd-font-color"></span></a>
             </li>
             <div class="profile-menu">
                 <span class="scnd-font-color title">RADIO HUSTLE</span>
@@ -59,24 +62,47 @@
             <h2 class="titular" style="background: #35aadc"><span class="icon fontawesome-info-sign"></span> Info</h2>
 
             <div class="tweet">
-                <p>
-                    Теперь у Radio Hustle есть API, текущая версия: 0.2.1
-                </p>
-                <p style="padding: 0 30px 0">
-                    Подключить API:
-                    <code>
-                        <script src="http://octav47.github.io/projects/radioapi.min.js"></script>
-                    </code>
-                </p>
-                <p style="padding: 0 30px 30px">
-                    Если Вы выступаете по претендентству, то не учитаются участники одного с Вами классами.
-                    Например, в Main участвовало 30 человек, Ваш класс RS. Вы заняли 10 место, обойдя 10 участников класса 			Main
-                    и 10 участников класса RS, тогда считается, что Вы заняли 10 место из 20.
-                </p>
+                Теперь у Radio Hustle есть API, текущая версия: 0.2.1
+                Подключить API:
+                    <pre>
+                        <code class="html">
+                            &lt;script src="http://octav47.github.io/projects/radioapi.min.js"&gt;&lt;/script&gt;
+                        </code>
+                    </pre>
+                Чтобы получить информацию о танцоре по его номеру:
+                    <pre>
+                        <code class="javascript">
+                            RadioAPI.getUser(id, async, success, error)
+                        </code>
+                    </pre>
+                id -- номер танцора,<br>
+                async -- true - асинхронный запрос, false - синхронный,<br>
+                success -- callback при ответе 200 (для синхронных запросов не нужен),<br>
+                error -- callback при любом другом ответе
+                <br>
+                <br>
+                В примерах все запросы асинхронные.
+                <br>
+                <br>
+                Получение классов танцора:
+                <br>
+                ID: <input id="input-classes" width="25"> <input id="input-classes-submit" type="button" value="OK"> <div id="input-classes-result"></div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    $('#input-classes-submit').on('click', function () {
+        var v = $('#input-classes').val();
+        RadioAPI.getUser(v, true, function (a) {
+            $('#input-classes-result').html(a.responseText);
+        }, function (e) {
+            console.log(e);
+            $('#input-classes-result').html('Ошибка запроса');
+        });
+    })
+</script>
 <!-- end main-container -->
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript"> (function (d, w, c) {

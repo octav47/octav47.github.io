@@ -1106,6 +1106,11 @@ END LINE-CHART by @kseso http://codepen.io/Kseso/pen/phiyL
     padding-right: 20px;
 }
 
+.tweet {
+    padding: 20px;
+    color: #ffffff;
+}
+
 .tweet.first {
     height: 150px;
     border-bottom: 1px solid #1f253d;

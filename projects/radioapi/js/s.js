@@ -31,7 +31,7 @@
         }
 
         if (!async) {
-            xmlhttp.open('GET', 'http://octav47.github.io/projects/radiohustle/ajax/' + userIDString + '.json', false);
+            xmlhttp.open('GET', 'http://octav47.github.io/projects/radiohustle/ajax/' + userIDString + '.json', true);
             xmlhttp.send();
 
             if (xmlhttp.status == 200) {
