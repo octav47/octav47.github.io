@@ -1,0 +1,115 @@
+.debug {
+    white-space: nowrap;
+}
+
+.clock-container-standart {
+    position: relative;
+}
+
+.clock-container-digit {
+    position: relative;
+    width: 800px;
+}
+
+.clock-big-arrow {
+    position: absolute;
+    width: 4px;
+    height: 75px;
+    top: 100px;
+    left: 98px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    transform-origin: 50% 0 0;
+    /* transform: rotate(-60deg); */
+}
+
+.clock-small-arrow {
+    position: absolute;
+    width: 1px;
+    height: 80px;
+    top: 100px;
+    left: 100px;
+    border: 1px solid #000000;
+    background-color: #cccccc;
+    transform-origin: 50% 0 0;
+    /* transform: rotate(-60deg); */
+}
+
+.clock-seconds-arrow {
+    position: absolute;
+    width: 1px;
+    height: 90px;
+    top: 100px;
+    left: 100px;
+    border: 1px solid #000000;
+    transform-origin: 50% 0 0;
+    z-index: 1000;
+}
+
+.clock-digit {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 150px;
+    margin: 10px;
+}
+
+.clock-digit .clock-digit-element {
+    position: absolute;
+    display: none;
+    width: 70px;
+    height: 16px;
+    border-radius: 25px;
+}
+
+.clock-digit .clock-digit-element:nth-child(1) {
+    top: 0;
+    margin: 0 10px;
+    background-color: #cccccc;
+}
+
+.clock-digit .clock-digit-element:nth-child(2) {
+    width: 16px;
+    height: 70px;
+    left: 0;
+    margin: 10px 0;
+    background-color: #cccccc;
+}
+
+.clock-digit .clock-digit-element:nth-child(3) {
+    width: 16px;
+    height: 70px;
+    right: 0;
+    margin: 10px 0;
+    background-color: #cccccc;
+}
+
+.clock-digit .clock-digit-element:nth-child(4) {
+    top: 67px;
+    margin: 0 10px;
+    background-color: #cccccc;
+}
+
+.clock-digit .clock-digit-element:nth-child(5) {
+    width: 16px;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    margin: 10px 0;
+    background-color: #cccccc;
+}
+
+.clock-digit .clock-digit-element:nth-child(6) {
+    width: 16px;
+    height: 70px;
+    bottom: 0;
+    right: 0;
+    margin: 10px 0;
+    background-color: #cccccc;
+}
+
+.clock-digit .clock-digit-element:nth-child(7) {
+    bottom: 0;
+    margin: 0 10px;
+    background-color: #cccccc;
+}
