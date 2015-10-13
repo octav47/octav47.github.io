@@ -13,9 +13,6 @@
 
 .clock-big-arrow {
     position: absolute;
-    width: 4px;
-    height: 75px;
-    top: 100px;
     left: 98px;
     border: 1px solid #000000;
     border-radius: 25px;

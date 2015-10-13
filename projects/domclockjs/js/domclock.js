@@ -16,6 +16,10 @@
 
         var self = this;
 
+        function pxToInt(px) {
+            return parseInt(px.replace('px', ''));
+        }
+
         function preload(options) {
             var container;
             switch (options.type) {
@@ -26,6 +30,9 @@
                     container.css('border', options.standard.style.container.border);
                     container.css('border-radius', options.standard.style.container.borderRadius);
                     var bigArrow = $('<div class="clock-big-arrow"></div>');
+                    bigArrow.css('width', Math.ceil(pxToInt(options.standard.style.container.width) * 0.02));
+                    bigArrow.css('height', Math.ceil(pxToInt(options.standard.style.container.width) * 0.37));
+                    bigArrow.css('top', Math.ceil(pxToInt(options.standard.style.container.width) * 0.5));
 
                     var smallArrow = $('<div class="clock-small-arrow"></div>');
                     var secondsArrow = $('<div class="clock-seconds-arrow"></div>');
