@@ -16,6 +16,14 @@ body {
      margin-right: 0;
 }
 
+.btn-wrap {
+    text-align: center;
+}
+
+#div {
+    height: 22px;
+}
+
 p {
     font-size: 20px
 }
@@ -25,7 +33,7 @@ p.small {
 }
 
 a, a.active, a:active, a:focus, a:hover {
-    color: #147d91
+    color: #ffca00;
 }
 
 h1, h2, h3, h4, h5, h6 {
