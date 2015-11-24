@@ -712,6 +712,7 @@
     });
 
     $('#table').tsorter({
+        target: $('#table'),
         excluded: [0, 11],
         cellParser: function (i, v) {
             switch (i) {

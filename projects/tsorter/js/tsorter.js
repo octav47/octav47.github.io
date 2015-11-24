@@ -4,9 +4,13 @@
 
         var self = this,
             def = {
+                target: undefined,
                 excluded: [],
                 cellParser: function (index, element) {
                     return element;
+                },
+                eventHandler: function (e) {
+
                 }
             };
 
@@ -51,11 +55,11 @@
             $.each(tuple, function (index, row) {
                 table.children('tbody').append(row);
             });
-            console.log(tuple);
         };
 
         var init = function init() {
-            var thead = self.find('thead');
+            var thead = self.find('thead'),
+                target = settings.target || self;
 
             thead.find('th').each(function (i, v) {
                 var $v = $(v);
@@ -84,7 +88,7 @@
                             .addClass('fa-sort-desc');
                         $this.attr('data-sort', 'desc');
                         zSort(self.find('tbody tr').get(), {
-                            table: self,
+                            table: target,
                             index: index,
                             order: 0,
                             parser: settings.cellParser
@@ -95,7 +99,7 @@
                             .addClass('fa-sort-asc');
                         $this.attr('data-sort', 'asc');
                         zSort(self.find('tbody tr').get(), {
-                            table: self,
+                            table: target,
                             index: index,
                             order: 1,
                             parser: settings.cellParser
