@@ -54,13 +54,7 @@ fs.readFile('./test/total.txt', 'utf8', function (err, data) {
     for (var i = 0; i < tmp.length; i++) {
         var id = tmp[i].substring(0, tmp[i].indexOf(';'));
         json[id] = getDancerData(tmp[i]);
-        fs.writeFile('./test/result/' + id + '.txt', JSON.stringify(getDancerData(tmp[i])), function (err) {
-            if (err) {
-                return console.log(err);
-            }
-
-            console.log('written');
-        });
+        fs.writeFileSync('./test/result/' + id + '.txt', JSON.stringify(getDancerData(tmp[i])));
     }
     var w = JSON.stringify(json);
 });

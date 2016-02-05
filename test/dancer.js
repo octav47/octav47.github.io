@@ -29,38 +29,8 @@
  }
  */
 
-(function($) {
-    var daDates = ['2013-11-09 ED',
-        '2013-11-09 M+S',
-        '2013-11-09 ED',
-        '2013-11-09 RS',
-        '2013-11-09 M+S',
-        '2013-11-24 ED',
-        '2013-11-24 RS',
-        '2013-11-24 A',
-        '2013-11-30 ED',
-        '2013-11-30 RS',
-        '2013-11-30 M+S',
-        '2013-11-30 ED',
-        '2013-11-30 M+S',
-        '2013-12-08 ED',
-        '2013-12-14 ED',
-        '2013-12-14 M',
-        '2013-12-14 S',
-        '2014-01-04 Nm',
-        '2014-01-04 NV',
-        '2014-01-04 I',
-        '2014-01-04 A',
-        '2014-01-04 Pro',
-        '2014-01-18 Nm',
-        '2014-01-18 NV',
-        '2014-01-18 I',
-        '2014-01-18 A',
-        '2014-01-18 Pro',
-        '2014-01-25 ED',
-        '2014-01-25 M',
-        '2014-01-25 S',
-        '2014-02-08 ED',
+(function ($) {
+    var daDates = ['2014-02-08 ED',
         '2014-02-08 M+S',
         '2014-02-16 ED',
         '2014-02-22 ED',
@@ -313,7 +283,92 @@
         '2015-10-24 ED',
         '2015-10-24 RS',
         '2015-10-24 M',
-        '2015-10-24 S'];
+        '2015-10-24 S',
+        '2015-11-07 ED',
+        '2015-11-07 RS',
+        '2015-11-07 M',
+        '2015-11-07 S',
+        '2015-11-07 ED',
+        '2015-11-07 M+S',
+        '2015-11-07 ED',
+        '2015-11-07 M+S',
+        '2015-11-15 ED',
+        '2015-11-15 RS',
+        '2015-11-21 ED',
+        '2015-11-21 RS',
+        '2015-11-21 M+S',
+        '2015-11-21 ED',
+        '2015-11-21 RS',
+        '2015-11-21 M+S',
+        '2015-11-28 ED',
+        '2015-11-28 RS',
+        '2015-11-28 M',
+        '2015-11-28 S',
+        '2015-11-28 ED',
+        '2015-11-28 RS',
+        '2015-12-06 ED',
+        '2015-12-06 RS',
+        '2015-12-06 M',
+        '2015-12-06 S',
+        '2015-12-06 A',
+        '2015-12-12 ED',
+        '2015-12-12 M+S',
+        '2015-12-20 ED',
+        '2016-01-05 ED',
+        '2016-01-05 RS',
+        '2016-01-05 M+S',
+        '2016-01-05 ED',
+        '2016-01-05 RS',
+        '2016-01-05 M',
+        '2016-01-05 S',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '2016-01-05 RS',
+        '2016-01-05 M',
+        '2016-01-05 S'];
 
     $.ajaxSetup({
         cache: false
@@ -326,7 +381,7 @@
             $('#dancer-loading').css('display', 'none');
         } else {
             console.log('test');
-            window.setTimeout(function() {
+            window.setTimeout(function () {
                 wfel();
             }, 500);
         }
@@ -342,7 +397,7 @@
             'slow');
     }
 
-    var pics = ['06472', '06776', '04870', '06149', '06274', '06534', '05992'];
+    var pics = ['06472', '06776', '04870', '06149', '06274', '06534', '05992', '06887', '06905'];
     var links = {
         '06472': 'http://vk.com/octav',
         '06776': 'http://vk.com/id3348576',
@@ -350,30 +405,33 @@
         '06149': 'http://vk.com/id137052640',
         '06274': 'http://vk.com/id143710185',
         '06534': 'http://vk.com/id470743',
-        '05992': 'http://vk.com/id3808296'
+        '05992': 'http://vk.com/id3808296',
+        '06887': 'http://vk.com/id960002',
+        '06905': 'http://vk.com/id7270343'
     };
     var cl = {
         'ivara': 'ivara',
         'yes!_(г.саратов)': 'yesds',
         'движение': 'dvizhenie',
         'youdance': 'youdance',
-        'open_dance_studio': 'ods'
+        'open_dance_studio': 'ods',
+        'мегаполис': 'megapolis'
     };
 
-    window.onload = function() {
+    window.onload = function () {
         $('#search').autocomplete({
             source: data,
-            select: function(event, ui) {
+            select: function (event, ui) {
                 $('#search-result').hide({
                     effect: 'blind',
-                    complete: function() {
+                    complete: function () {
                         $.ajax({
                             url: 'http://radio-hustle.com/dancers_old/ajax/' + ui.item.value.split(' ')[0] + '.json',
                             type: 'GET',
-                            beforeSend: function() {
+                            beforeSend: function () {
                                 console.log('before load');
                             },
-                            success: function(data) {
+                            success: function (data) {
                                 $('#rating-chart').append('<i class="fa fa-3x fa-spin fa-cog" style="text-align: center"></i>');
                                 var info = setInfo(data);
                                 info.story_dnd = info.story_dnd.map(function (e) {
@@ -385,13 +443,13 @@
                                 $.ajax({
                                     url: 'http://radio-hustle.com/dancers_old/da/' + ui.item.value.split(' ')[0].replace(/^0*/gmi, '') + '.txt',
                                     cache: true,
-                                    beforeSend: function() {
+                                    beforeSend: function () {
                                         $('#rating-chart').find('.highcharts-container').remove();
                                     },
-                                    success: function(data) {
+                                    success: function (data) {
                                         var id = $('#current-number').html().replace(/^0+/, '');
                                         var labels = [];
-                                        var seriesData = function(data) {
+                                        var seriesData = function (data) {
                                             data = JSON.parse(data);
                                             var a = [], k = 0;
                                             for (var i in data) {
@@ -443,15 +501,15 @@
                                             }]
                                         });
                                     },
-                                    complete: function() {
+                                    complete: function () {
                                         $('#rating-chart').find('i.fa-cog').css('display', 'none');
                                     }
                                 });
                             },
-                            complete: function() {
+                            complete: function () {
                                 $('#search-result').show({
                                     effect: 'blind',
-                                    complete: function() {
+                                    complete: function () {
                                         goToByScroll('search-result');
                                     }
                                 });
@@ -468,7 +526,7 @@
     function setInfo(data) {
         $('#current-number').html(data.id);
         $('#current-name').html(data.name);
-        $('#current-club').html((function(s, cl) {
+        $('#current-club').html((function (s, cl) {
             var w = '';
             var cls = s.split(',');
             for (var i = 0; i < cls.length; i++) {
@@ -505,8 +563,11 @@
     function setAdditionalInfo(id) {
         if (pics.indexOf(id) > -1) {
             $('#pic').attr('src', 'http://radio-hustle.com/dancers_old/pics/' + id + '.jpg');
+            $('.add-avatar-link').remove();
         } else {
             $('#pic').attr('src', 'http://radio-hustle.com/dancers_old/pics/no_avatar.jpg');
+            $('.add-avatar-link').remove();
+            $('#pic').parent().append('<span class="add-avatar-link" style="position: absolute; bottom: 25px; font-size: 14px; display: block; margin: 0 auto; width: 200px; border-radius: 25px;text-align: center;"><a href="http://radio-hustle.com/payments/avatar">Установить аватар</a></span>');
         }
         if (links.hasOwnProperty(id)) {
             var currentNameSelector = $('#current-name');
