@@ -45,7 +45,7 @@ function getDancerData(input) {
 
 var json = {};
 
-var file = 'f.txt';
+var file = 'm.txt';
 fs.readFile('./test/' + file, 'utf8', function (err, data) {
     if (err) {
         return console.log(err);

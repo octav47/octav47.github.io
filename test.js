@@ -47,6 +47,7 @@ var json = {};
 
 
 fs.readFile('./test/total.txt', 'utf8', function (err, data) {
+    console.log(data.substring(0, 100));
     if (err) {
         return console.log(err);
     }
