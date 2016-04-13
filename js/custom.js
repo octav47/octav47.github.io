@@ -188,8 +188,8 @@
 	/** Contact Form validation **/
 	function contactValidateConfig() {
 		var $form = $("#contact-form"),
-		successMsg = "<span class='elegant-eleganticons-44 form-success'>Your message has been sent!</span>",
-		errorMsg = "<span class='elegant-eleganticons-45 form-error'>Oops! something went wrong with the server.</span>",
+		successMsg = "<span class='elegant-eleganticons-44 form-success'>Я обязательно свяжусь с Вами!</span>",
+		errorMsg = "<span class='elegant-eleganticons-45 form-error'>Упс! Что-то не так с сервером.</span>",
 		response;
 		$form.validate({	
 			rules: {
