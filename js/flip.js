@@ -53,7 +53,7 @@
 				self = this,
 				isPlaceholderLoaded = false;
 
-			$clicker.on("click touchstart", function(e) {
+			$clicker.on("click", function(e) {
 				var $t = $(this);
 				// Check if cloned content is loaded
 				if(!isPlaceholderLoaded) {
@@ -64,7 +64,7 @@
 				
 
 				// Remove on click close-btn
-				$pageClose.on("click touchstart", function(e) {
+				$pageClose.on("click", function(e) {
 					if(e.target == this) {
 						self._unloadPlaceholder(self.opts);
 						self._unloadContent(self.opts, $t);
