@@ -2,9 +2,10 @@
  Radio Hustle API v0.2.1
  */
 
-(function () {
+(function (W, D, X) {
 
     var RadioAPI = {},
+        mainHost = 'http://radio-hustle.com/',
         host = 'http://radio-hustle.com/dancers_old/ajax/';
 
     if (!window.RadioAPI) {
@@ -36,9 +37,9 @@
                 console.log(a);
             };
 
-        if (window.XMLHttpRequest) {
+        if (W.X) {
             // code for IE7+, Firefox, Chrome, Opera, Safari
-            xmlhttp = new XMLHttpRequest();
+            xmlhttp = new X();
         } else {
             // code for IE6, IE5
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
@@ -62,7 +63,7 @@
         } else {
             xmlhttp.open('GET', host + userIDString + '.json', true);
             xmlhttp.onreadystatechange = function () {
-                if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+                if (xmlhttp.readyState == X.DONE) {
                     if (xmlhttp.status == 200) {
                         var ajaxResponse = JSON.parse(xmlhttp.response);
                         ajaxResponse = reformatJSON(ajaxResponse);
@@ -78,6 +79,30 @@
             };
             xmlhttp.send();
         }
-    }
+    };
 
-})();
+    RadioAPI.setPic = function (selector, userID) {
+        var image = D.querySelector(selector),
+            xmlhttp;
+        if (W.X) {
+            xmlhttp = new X();
+        } else {
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open('GET', mainHost + 'api/dancers_pics.php?id=' + userID, true);
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == X.DONE) {
+                if (xmlhttp.status == 200) {
+                    image.setAttribute('src', xmlhttp.responseText);
+                }
+                else if (xmlhttp.status == 400) {
+
+                }
+                else if (xmlhttp.status == 404) {
+
+                }
+            }
+        };
+        xmlhttp.send();
+    }
+})(window, document, XMLHttpRequest);
