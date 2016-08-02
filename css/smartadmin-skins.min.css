@@ -1391,12 +1391,13 @@ body.smart-style-4 {
 }
 
 .smart-style-4 #header {
+    display: none;
     background: #fff;
     box-shadow: 0 2px 2px rgba(0, 0, 0, .05), 0 1px 0 rgba(0, 0, 0, .05)
 }
 
 .smart-style-4 #header > :first-child {
-    background: #71a06a
+    /*background: #71a06a*/
 }
 
 .smart-style-4 .login-info > span {
@@ -1572,7 +1573,12 @@ body.smart-style-4 {
 
 @media (max-width: 979px) {
     .smart-style-4 #header {
-        background: #71a06a
+        display: block;
+        /*background: #71a06a*/
+    }
+
+    .smart-style-4:not(.menu-on-top) #left-panel {
+        padding-top: 49px;
     }
 
     .smart-style-4 #hide-menu > :first-child > a {
