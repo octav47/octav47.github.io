@@ -1,383 +1,341 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kir Tribunsky Frontend Developer">
-    <meta name="author" content="solutionportal121">
-    <title>Kir Tribunsky | Frontend Developer</title>
-    <link rel="stylesheet" href="fonts/elegant/styles.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-</head>
-<body>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
 
-<div class="page-front container">
-    
-    <ul class="grid-boxes list-unstyled flip-menu row" id="masonry-grids">
-        
-        <li class="grid-item col-md-2" data-cell="1">
-            <div class="col-wrap user-pic">
-                <img src="img/avatar.jpg" alt="user-pic">
-            </div>
-        </li>
-        <li class="grid-item col-md-8" data-cell="2">
-            <div class="col-wrap user-short-info">
-                <h2 class="head">Кир Трибунский <span>Frontend Developer</span></h2>
+		<title> SmartAdmin </title>
+		<meta name="description" content="">
+		<meta name="author" content="">
 
-                <div class="float-right">
-                    
-                    <ul class="socials list-unstyled">
-                        <li><a href="https://twitter.com/octav47" class="fa fa-twitter"></a></li>
-                        <li><a href="https://vk.com/octav" class="fa fa-vk"></a></li>
-                        <li><a href="https://github.com/octav47" class="fa fa-github"></a></li>
-                        <li><a href="https://www.instagram.com/octav47/" class="fa fa-instagram"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </li>
-        <li class="grid-item col-md-2" data-cell="3">
-            <div class="col-wrap user-pic">
-                
-            </div>
-        </li>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <li class="grid-item col-md-2" data-cell="4">
-            <div class="col-wrap about-box">
-                <a href="#about-page" class="elegant-eleganticons-316" data-flip-menu="true">Обо мне</a>
-            </div>
-        </li>
-        <li class="grid-item col-md-8" data-cell="5">
-            
-            <div class="col-wrap featured-post">
-                <div id="owl-carousel">
-                    <div class="post-1">
-                        <div class="left col-md-5 col-sm-5 col-xs-4">
-                            <img src="img/logo_radio_hustle.png" alt="featured-post">
-                        </div>
-                        <div class="right col-md-7 col-sm-7 col-xs-8">
-                            <h3 class="head">Radio Hustle</h3>
-                            <p class="desc">Мой проект, посвящённый танцевальной тематике. Начинался как простая online-радиостанция. В данный момент включает в себя множество различных сервисов, востребанных людьми.</p>
-                            <div class="bottom">
-                                
-                                <a href="http://radio-hustle.com" class="more-btn">Подробнее</a>
-                            </div>
-                        </div>
-                    </div>
+		<!-- Basic Styles -->
+		<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css">
 
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                </div> 
-                <div class="featured-pagination">
-                    <span class="back elegant-eleganticons-2"></span>
-                    <span class="next elegant-eleganticons-3"></span>
-                </div>
-            </div>
-        </li>
-        <li class="grid-item col-md-2" data-cell="6">
-            <div class="col-wrap works-box">
-                <a href="#portfolio-page" class="elegant-eleganticons-328" data-flip-menu="true">Эксперименты и наработки</a>
-            </div>
-        </li>
-        <li class="grid-item col-md-2" data-cell="7">
-            <div class="col-wrap resume-box">
-                <a href="#resume-page" class="elegant-eleganticons-71" data-flip-menu="true">Достижения</a>
-            </div>
-        </li>
-        <li class="grid-item col-md-2" data-cell="8">
-            <div class="col-wrap contact-box">
-                <a href="#contact-page" class="elegant-eleganticons-110" data-flip-menu="true">Обратная связь</a>
-            </div>
-        </li>
-    </ul>
-</div> 
+		<!-- SmartAdmin Styles : Caution! DO NOT change the order -->
+		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-production-plugins.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-production.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-skins.min.css">
+
+		<!-- SmartAdmin RTL Support -->
+		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-rtl.min.css">
+
+		<link rel="stylesheet" type="text/css" media="screen" href="css/custom.css">
+
+		<!-- FAVICONS -->
+		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+		<!-- GOOGLE FONT -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+
+		<!-- Specifying a Webpage Icon for Web Clip
+			 Ref: https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
+		<link rel="apple-touch-icon" href="img/splash/sptouch-icon-iphone.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/splash/touch-icon-ipad.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/splash/touch-icon-iphone-retina.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/splash/touch-icon-ipad-retina.png">
+
+		<!-- iOS web-app metas : hides Safari UI Components and Changes Status Bar Appearance -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!-- Startup image for web apps -->
+		<link rel="apple-touch-startup-image" href="img/splash/ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+		<link rel="apple-touch-startup-image" href="img/splash/ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+		<link rel="apple-touch-startup-image" href="img/splash/iphone.png" media="screen and (max-device-width: 320px)">
+
+	</head>
+
+	<!--
+
+	TABLE OF CONTENTS.
+
+	Use search to find needed section.
+
+	===================================================================
+
+	|  01. #CSS Links                |  all CSS links and file paths  |
+	|  02. #FAVICONS                 |  Favicon links and file paths  |
+	|  03. #GOOGLE FONT              |  Google font link              |
+	|  04. #APP SCREEN / ICONS       |  app icons, screen backdrops   |
+	|  05. #BODY                     |  body tag                      |
+	|  06. #HEADER                   |  header tag                    |
+	|  07. #PROJECTS                 |  project lists                 |
+	|  08. #TOGGLE LAYOUT BUTTONS    |  layout buttons and actions    |
+	|  09. #MOBILE                   |  mobile view dropdown          |
+	|  10. #SEARCH                   |  search field                  |
+	|  11. #NAVIGATION               |  left panel & navigation       |
+	|  12. #RIGHT PANEL              |  right panel userlist          |
+	|  13. #MAIN PANEL               |  main panel                    |
+	|  14. #MAIN CONTENT             |  content holder                |
+	|  15. #PAGE FOOTER              |  page footer                   |
+	|  16. #SHORTCUT AREA            |  dropdown shortcuts area       |
+	|  17. #PLUGINS                  |  all scripts and plugins       |
+
+	===================================================================
+
+	-->
+
+	<!-- #BODY -->
+	<!-- Possible Classes
+
+		* 'smart-style-{SKIN#}'
+		* 'smart-rtl'         - Switch theme mode to RTL
+		* 'menu-on-top'       - Switch to top navigation (no DOM change required)
+		* 'no-menu'			  - Hides the menu completely
+		* 'hidden-menu'       - Hides the main menu but still accessable by hovering over left edge
+		* 'fixed-header'      - Fixes the header
+		* 'fixed-navigation'  - Fixes the main menu
+		* 'fixed-ribbon'      - Fixes breadcrumb
+		* 'fixed-page-footer' - Fixes footer
+		* 'container'         - boxed layout mode (non-responsive: will not work with fixed-navigation & fixed-ribbon)
+	-->
+	<body class="minified smart-style-4">
+
+	<!-- HEADER -->
+	<header id="header">
+		<div class="pull-right">
+			<div id="hide-menu" class="btn-header pull-right">
+				<span> <a href="javascript:void(0);" data-action="toggleMenu" title="Collapse Menu"><i class="fa fa-reorder"></i></a> </span>
+			</div>
+		</div>
+	</header>
+	<!-- END HEADER -->
 
 
+	<!-- Left panel : Navigation area -->
+		<!-- Note: This width of the aside area can be adjusted through LESS variables -->
+		<aside id="left-panel">
 
+			<!-- NAVIGATION : This navigation is also responsive-->
+			<nav>
+				<ul>
+					<li class="active">
+						<a href="index.html" title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">Home</span></a>
+					</li>
+					<li>
+						<a href="projects.html" title="Projects"><i class="fa fa-file-text-o"></i> <span class="menu-item-parent">Projects</span></a>
+					</li>
+					<!--<li>-->
+						<!--<a href="blog.html" title="Blog"><i class="fa fa-paragraph"></i> <span class="menu-item-parent">Blog</span></a>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<a href="gallery.html" title="Gallery"><i class="fa fa-picture-o"></i> <span class="menu-item-parent">Gallery</span></a>-->
+					<!--</li>-->
+					<li>
+						<a href="profile.html" title="About me"><i class="fa fa-group"></i> <span class="menu-item-parent">About me</span></a>
+					</li>
+				</ul>
+			</nav>
+			<span class="minifyme" data-action="minifyMenu"> 
+				<i class="fa fa-arrow-circle-left hit"></i> 
+			</span>
 
-<div class="page-contents">
-    
-    <div class="about-page inner-pages" id="about-page">
-        <div class="short-bio parallax">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">	
-                        <h3 class="title">Кто я?</h3>
-                        <p>
-                            Меня зовут Кир Трибунский, я frontend developer в <strong>ЦДУ ТЭК</strong>
-                        </p>
-                        <p>
-                            Люблю экспериментировать с новыми веб-технологиями. Создаю полезные сервисы. Творю.
-                        </p>
-                        <br>
-                        <ul class="info-boxes row list-unstyled">
-                            <li class="col-md-4 col-sm-4 col-xs-4">
-                                <span class="top">Компания</span>
-                                <span class="bottom">ЦДУ ТЭК</span>
-                            </li>
-                            <li class="col-md-4 col-sm-4 col-xs-4">
-                                <span class="top">Город</span>
-                                <span class="bottom">Москва</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div> 
-        </div> 
-    </div> 
+		</aside>
+		<!-- END NAVIGATION -->
 
-    
-    <div class="resume-page inner-pages" id="resume-page">
-        <div class="container">
-            <div class="timeline row">
-                <div id="timeline-carousel">
+		<!-- MAIN PANEL -->
+		<div id="main" role="main">
 
-                    <div class="col-md-4 item"> 
-                        <div class="top">
-                            <span class="time">С 2010</span>
-                            <span class="title">Начало пути</span>
-                            <span class="rhombus elegant-eleganticons-127"></span>
-                        </div>
-                        <div class="bottom">
-                            <p class="info">Придумываю и разрабатываю уже <span id="work-years-count"></span> лет</p>
-                        </div>
-                    </div>
+			<!-- RIBBON -->
+			<div id="ribbon">
 
-                    <div class="col-md-4 item"> 
-                        <div class="top">
-                            <span class="time">2009-2014</span>
-                            <span class="title">СГУ им Н. Г. Чернышевского, КНиИТ</span>
-                            <span class="rhombus elegant-eleganticons-113"></span>
-                        </div>
-                        <div class="bottom">
-                            <p class="info">Дипломированный математик. Хорошо разбираюсь в нейронных сетях.</p>
-                        </div>
-                    </div>
+				<span class="ribbon-button-alignment"> 
+					<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh"  rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
+						<i class="fa fa-refresh"></i>
+					</span> 
+				</span>
 
-                    <div class="col-md-4 item"> 
-                        <div class="top">
-                            <span class="time">С 2015</span>
-                            <span class="title">Radio Hustle</span>
-                            <span class="rhombus elegant-eleganticons-113"></span>
-                        </div>
-                        <div class="bottom">
-                            <p class="info">Главный разработчик полезного сервиса для танцоров.</p>
-                        </div>
-                    </div>
+				<!-- breadcrumb -->
+				<ol class="breadcrumb">
+					<li>Home</li>
+				</ol>
+				<!-- end breadcrumb -->
 
-                </div> 
-            </div> 
-        </div> 
-    </div> 
+				<!-- You can also add more buttons to the
+				ribbon for further usability
 
+				Example below:
 
-    <div class="portfolio-page inner-pages" id="portfolio-page">
-        <div class="banner parallax">
-            <h2 class="title">Наработки и эксперименты</h2>
-            <p>Некоторые мои эксперименты в области веб-разработки. От простых до комплексных.</p>
-        </div>
-        <div class="container">
-            <ul class="row filter-nav list-unstyled" id="filter-nav">
-                <li class="filter-current"><a href="#" data-filter="*">Все</a></li>
-                <li><a href="#" data-filter=".js">JS</a></li>
-                <li><a href="#" data-filter=".css">CSS</a></li>
-            </ul>
+				<span class="ribbon-button-alignment pull-right">
+				<span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
+				<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
+				<span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
+				</span> -->
 
-            <ul class="row filter-port list-unstyled" id="filter-port">
-                <li class="item js col-md-4 col-sm-6">
-                    <figure>
-                        <img src="img/port/typingjs.png" alt="placeholder-img">
-                        <div class="overlay">
-                            <a href="projects/typing/" class="elegant-eleganticons-137 btn" rel="external" target="_blank"></a>
-                        </div>
-                        <figcaption class="caption">
-                            <h3>TypingJS<span>jQuery plugin</span></h3>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="item js col-md-4 col-sm-6">
-                    <figure>
-                        <img src="img/port/animated-yandex-maps.png" alt="placeholder-img">
-                        <div class="overlay">
-                            <a href="http://dev.radio-hustle.com/projects/cars/" class="elegant-eleganticons-137 btn" rel="external" target="_blank"></a>
-                        </div>
-                        <figcaption class="caption">
-                            <h3>Yandex Maps<span>Симуляция передвижения трафика</span></h3>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="item js css col-md-4 col-sm-6">
-                    <figure>
-                        <img src="img/port/equalizer.png" alt="placeholder-img">
-                        <div class="overlay">
-                            <a href="http://dev.radio-hustle.com/projects/live/" class="elegant-eleganticons-137 btn" rel="external" target="_blank"></a>
-                        </div>
-                        <figcaption class="caption">
-                            <h3>Equalizer<span>jQuery plugin</span></h3>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="item js col-md-4 col-sm-6">
-                    <figure>
-                        <img src="img/port/skatingjs.png" alt="placeholder-img">
-                        <div class="overlay">
-                            <a href="https://github.com/octav47/skating" class="elegant-eleganticons-137 btn" rel="external" target="_blank"></a>
-                        </div>
-                        <figcaption class="caption">
-                            <h3>SkatingJS<span>Реализация skating-system на JS</span></h3>
-                        </figcaption>
-                    </figure>
-                </li>
-            </ul> 
-        </div> 
-    </div> 
+			</div>
+			<!-- END RIBBON -->
 
-    <div class="contact-page inner-pages" id="contact-page">
-        <div class="banner parallax">
-            <h2 class="title">Связаться со мной</h2>
-            <p>Если Вы хотите заказать у меня сайт, обсудить уже существующий проект или просто поболтать о веб-разработке за чашечкой кофе, то свяжитесь со мной любым удобным Вам способом :)</p>
-        </div>
-        <div class="container">
-            <div class="row form-wrap">
-                
-                <div class="col-md-6 cform">
-                    <h3 class="title">Обратная связь</h3>
-                    <form id="contact-form" method="post" name="contact-form" action="http://formspree.io/forty-7@yandex.ru">
-                        <div class="inputs">
-                            <label for="name">Имя<em>*</em></label>
-                            <input type="text" id="name" name="name">
-                        </div>
-                        <div class="inputs">
-                            <label for="email">E-mail<em>*</em></label>
-                            <input type="email" id="email" name="email">
-                        </div>
-                        <div class="inputs">
-                            <label for="subject">Тема</label>
-                            <input type="text" id="subject" name="subject">
-                        </div>
-                        <div class="inputs">
-                            <label for="message">Сообщение<em>*</em></label>
-                            <textarea id="message" name="message" cols="50" rows="5"></textarea>
-                        </div>
-                        <div class="inputs"><input type="submit" class="contact-submit" id="cform-submit" value="Отправить"></div>
-                        
-                    </form>
+			<!-- MAIN CONTENT -->
+			<div id="content" style="padding-top: 0;">
 
-                </div>
-                
-                <div class="col-md-6 caddress">
-                    <h3 class="title">Другие контакты</h3>
-                    <div class="details">
-                        <p class="elegant-eleganticons-238">+7 916 106 9449</p>
-                        <p class="elegant-eleganticons-110">forty-7@yandex.ru</p>
-                        
-                    </div>
-                    <ul class="socials list-unstyled">
-                        <li><a href="https://twitter.com/octav47" class="fa fa-twitter"></a></li>
-                        <li><a href="https://vk.com/octav" class="fa fa-vk"></a></li>
-                        <li><a href="https://github.com/octav47" class="fa fa-github"></a></li>
-                        <li><a href="https://www.instagram.com/octav47/" class="fa fa-instagram"></a></li>
-                    </ul>
-                </div> 
-            </div> 
-        </div> 
-    </div> 
+				<!-- row -->
 
-</div>
+				<div class="row">
 
+					<div class="col-sm-12" style="padding: 0;">
+						<div class="well well-cl col-xs-12 col-sm-6 col-md-3 col-lg-3 no-padding">
+							<a href="./projects.html">
+								<div class="cell">
+									<div class="cell-title">Projects</div>
+								</div>
+							</a>
+						</div>
 
-<nav id="inner-nav" class="inner-nav">
-    <ul class="container inside-wrap list-unstyled">
-        <li class="elegant-eleganticons-64 menu-btn">
-            <ul class="menu-content list-unstyled">
-                <li><a href="#about-page">Обо мне</a></li>
-                <li><a href="#resume-page">Резюме</a></li>
-                <li><a href="#portfolio-page">Портфолию</a></li>
-                <li><a href="#contact-page">Контакты</a></li>
-            </ul>
-        </li>
-        <li class="elegant-eleganticons-44 close-btn"></li>
-    </ul>
-</nav>
+						<div class="well well-cl col-xs-12 col-sm-6 col-md-3 col-lg-3 no-padding">
+							<a href="./blog.html">
+								<div class="cell">
+									<div class="cell-title">Blog</div>
+								</div>
+							</a>
+						</div>
 
+						<div class="well well-cl col-xs-12 col-sm-6 col-md-3 col-lg-3 no-padding">
+							<a href="./gallery.html">
+								<div class="cell">
+									<div class="cell-title">Gallery</div>
+								</div>
+							</a>
+						</div>
 
+						<div class="well well-cl col-xs-12 col-sm-6 col-md-3 col-lg-3 no-padding">
+							<a href="./profile.html">
+								<div class="cell">
+									<div class="cell-title">About me</div>
+								</div>
+							</a>
+						</div>
+					</div>
 
+				</div>
 
+				<!-- end row -->
 
+			</div>
+			<!-- END MAIN CONTENT -->
 
+		</div>
+		<!-- END MAIN PANEL -->
 
-<script src="js/jquery-1.10.2.min.js"></script>
-<script src="js/modernizr.custom.js"></script>
-<script src="js/snap.svg-min.js"></script>
-<script src="js/debounce.js"></script>
+		<!-- PAGE FOOTER -->
+		<div class="page-footer">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<span class="txt-color-white">Kir Tribunsky © 2014-2016</span>
+				</div>
+			</div>
+		</div>
+		<!-- END PAGE FOOTER -->
 
-<script src="js/jquery.ui.touch-punch.min.js"></script>
-<script src="js/masonry.pkgd.min.js"></script>
-<script src="js/jquery.isotope.min.js"></script>
-<script src="js/magnific-popup.min.js"></script>
-<script src="js/jquery.validate.min.js"></script>
+		<!--================================================== -->
 
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/skills.js"></script>
-<script src="js/jquery.smooth-scroll.min.js"></script>
-<script src="js/jquery.keyframes.min.js"></script>
-<script src="js/flip.js"></script>
-<script src="js/custom.js"></script>
+		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+		<script data-pace-options='{ "restartOnRequestAfter": true }' src="js/plugin/pace/pace.min.js"></script>
 
+		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script>
+			if (!window.jQuery) {
+				document.write('<script src="js/libs/jquery-2.1.1.min.js"><\/script>');
+			}
+		</script>
 
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script>
+			if (!window.jQuery.ui) {
+				document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+			}
+		</script>
 
-<!--[if lt IE 10]>
-<script src="js/jquery.placeholder.min.js"></script>
-<script type="text/javascript">
-    $('input, textarea').placeholder();
-</script>
-<![endif]-->
-<script>$(document).ready(function () { $('#work-years-count').html((new Date()).getFullYear() - 2010) })</script>
+		<!-- IMPORTANT: APP CONFIG -->
+		<script src="js/app.config.js"></script>
 
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter31686791 = new Ya.Metrika({
-                    id:31686791,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-            } catch(e) { }
-        });
+		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events-->
+		<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script>
 
-        var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
+		<!-- BOOTSTRAP JS -->
+		<script src="js/bootstrap/bootstrap.min.js"></script>
 
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/31686791" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- CUSTOM NOTIFICATION -->
+		<script src="js/notification/SmartNotification.min.js"></script>
 
-</body>
+		<!-- JARVIS WIDGETS -->
+		<script src="js/smartwidgets/jarvis.widget.min.js"></script>
+
+		<!-- EASY PIE CHARTS -->
+		<script src="js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+
+		<!-- SPARKLINES -->
+		<script src="js/plugin/sparkline/jquery.sparkline.min.js"></script>
+
+		<!-- JQUERY VALIDATE -->
+		<script src="js/plugin/jquery-validate/jquery.validate.min.js"></script>
+
+		<!-- JQUERY MASKED INPUT -->
+		<script src="js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+
+		<!-- JQUERY SELECT2 INPUT -->
+		<script src="js/plugin/select2/select2.min.js"></script>
+
+		<!-- JQUERY UI + Bootstrap Slider -->
+		<script src="js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+		<!-- browser msie issue fix -->
+		<script src="js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+
+		<!-- FastClick: For mobile devices -->
+		<script src="js/plugin/fastclick/fastclick.min.js"></script>
+
+		<!--[if IE 8]>
+
+		<h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
+
+		<![endif]-->
+
+		<!-- MAIN APP JS FILE -->
+		<script src="js/app.min.js"></script>
+
+		<!-- ENHANCEMENT PLUGINS : NOT A REQUIREMENT -->
+
+		<!-- SmartChat UI : plugin -->
+		<script src="js/smart-chat-ui/smart.chat.ui.min.js"></script>
+		<script src="js/smart-chat-ui/smart.chat.manager.min.js"></script>
+
+		<!-- PAGE RELATED PLUGIN(S)
+		<script src="..."></script>-->
+
+		<script type="text/javascript">
+
+		// DO NOT REMOVE : GLOBAL FUNCTIONS!
+
+		$(document).ready(function() {
+
+			pageSetUp();
+
+		})
+
+		</script>
+
+		<!-- Your GOOGLE ANALYTICS CODE Below -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+				_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+
+	</body>
+
 </html>

@@ -4,7 +4,7 @@
 
 .cell {
     width: 100%;
-    height: 100%;
+    height: 250px;
     min-height: 250px;
     color: #ffffff;
     background: url(../img/pattern/overlay-pattern.png);
@@ -17,13 +17,25 @@
     font-size: 200%;
 }
 
+.cell-title-logo {
+    float: left;
+    height: 100%;
+    max-width: 230px;
+    max-height: 230px;
+    margin: 10px;
+    outline: 1px solid #404040;
+}
+
+.cell-text {
+    float: left;
+}
+
 .well:first-of-type .cell {
     background-color: #568a89;
 }
 
 .well:nth-of-type(2) .cell {
     background-color: #92a2a8;
-    filter: none;
 }
 
 .well:nth-child(3) .cell {
@@ -32,4 +44,8 @@
 
 .well:nth-child(4) .cell {
     background-color: #a65858;
+}
+
+.well .cell.no-background-color {
+    background: none;
 }

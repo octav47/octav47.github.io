@@ -21,7 +21,7 @@
 
 		<!-- SmartAdmin RTL Support -->
 		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-rtl.min.css">
-		
+
 		<link rel="stylesheet" type="text/css" media="screen" href="css/custom.css">
 
 		<!-- FAVICONS -->
@@ -119,12 +119,12 @@
 					<li>
 						<a href="projects.html" title="Projects"><i class="fa fa-file-text-o"></i> <span class="menu-item-parent">Projects</span></a>
 					</li>
-					<li>
-						<a href="blog.html" title="Blog"><i class="fa fa-paragraph"></i> <span class="menu-item-parent">Blog</span></a>
-					</li>
-					<li>
-						<a href="gallery.html" title="Gallery"><i class="fa fa-picture-o"></i> <span class="menu-item-parent">Gallery</span></a>
-					</li>
+					<!--<li>-->
+						<!--<a href="blog.html" title="Blog"><i class="fa fa-paragraph"></i> <span class="menu-item-parent">Blog</span></a>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--<a href="gallery.html" title="Gallery"><i class="fa fa-picture-o"></i> <span class="menu-item-parent">Gallery</span></a>-->
+					<!--</li>-->
 					<li class="active">
 						<a href="profile.html" title="About me"><i class="fa fa-group"></i> <span class="menu-item-parent">About me</span></a>
 					</li>
@@ -170,35 +170,21 @@
 			<!-- END RIBBON -->
 
 			<!-- MAIN CONTENT -->
-			<div id="content">
-
-				<!-- Bread crumb is created dynamically -->
-				<!-- row -->
-				<div class="row">
-
-					<!-- col -->
-					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
-						<h1 class="page-title txt-color-blueDark"><!-- PAGE HEADER --><i class="fa-fw fa fa-puzzle-piece"></i> <span>
-							About me </span></h1>
-					</div>
-					<!-- end col -->
-
-				</div>
-				<!-- end row -->
+			<div id="content" style="padding: 0; overflow: hidden;">
 
 				<!-- row -->
 
-				<div class="row">
+				<div class="row" style="padding: 0; margin: 0;">
 
 					<div class="col-sm-12">
 
 
-							<div class="well well-sm">
+							<div class="well well-sm" style="padding: 0; margin: 0;">
 
 								<div class="row">
 
-									<div class="col-sm-12 col-md-12 col-lg-12">
-										<div class="well well-light well-sm no-margin no-padding">
+									<div class="col-sm-12 col-md-12 col-lg-12" style="padding: 0;">
+										<div id="profile" class="well well-light well-sm no-margin no-padding">
 
 											<div class="row">
 
@@ -423,6 +409,16 @@
 			})();
 
 		</script>
+
+	<script>
+		function resizeProfile() {
+			$('#profile').height($(window).height() - 57);
+		}
+
+		$(window, document).on('resize', resizeProfile);
+
+		resizeProfile();
+	</script>
 
 	</body>
 
