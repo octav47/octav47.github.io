@@ -16,7 +16,8 @@
   "dependencies": {
     "gulp": "*",
     "gulp-rename": "*",
-    "gulp-htmlmin": "*"
+    "gulp-htmlmin": "*",
+    "gulp-imagemin": "*"
   },
   "author": "",
   "license": "ISC",
