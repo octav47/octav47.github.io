@@ -2,6 +2,9 @@
     'use strict';
 
     var currentLocation = window.location.href.split('/').reverse()[0].replace('.html', '');
+    if (currentLocation == '') {
+        currentLocation = 'index';
+    }
 
     var nav = $('#left-panel').find('> nav');
 
