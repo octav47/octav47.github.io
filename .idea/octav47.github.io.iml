@@ -13,5 +13,6 @@
     <orderEntry type="library" name="highlight" level="application" />
     <orderEntry type="library" name="mocha" level="application" />
     <orderEntry type="library" name="chai" level="application" />
+    <orderEntry type="library" name="octav47.github.io node_modules" level="project" />
   </component>
 </module>
