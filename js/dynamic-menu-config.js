@@ -60,7 +60,7 @@
                 text: ' Kir Tribunsky '
             }, {
                 external: true,
-                href: 'www.linkedin.com/in/tribunsky',
+                href: 'http://www.linkedin.com/in/tribunsky',
                 title: 'Kir Tribunsky',
                 icon: 'linkedin',
                 text: ' LinkedIn '
