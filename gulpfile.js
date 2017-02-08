@@ -16,13 +16,13 @@ gulp.task('minify-index', function () {
 });
 
 gulp.task('minify-projects', function () {
-    return gulp.src('projects_source.html')
-        .pipe(rename('projects.html'))
+    return gulp.src('projects/index_source.html')
+        .pipe(rename('index.html'))
         .pipe(htmlmin({
             collapseWhitespace: true,
             removeComments: true
         }))
-        .pipe(gulp.dest('./'));
+        .pipe(gulp.dest('./projects'));
 });
 
 gulp.task('minify-images', function () {
