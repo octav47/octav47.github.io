@@ -9,18 +9,21 @@
             src: url(./ProximaNovaRegular.otf)
         }
 
-        .btn {
-            width: 83px;
-            height: 38px;
-            line-height: 38px;
+        @font-face {
+            font-family: Tondo;
+            src: url(./Tondo.woff)
+        }
+
+        .proxima-nova {
             font-family: Proxima-Nova;
-            font-size: 14px;
-            font-weight: 600;
-            text-align: center;
-            border-radius: 4px;
-            background-color: #6893f1;
-            color: #fff;
-            cursor: pointer;
+        }
+
+        .tondo {
+            font-family: Tondo;
+        }
+
+        .btn {
+            font-size: 24px;
         }
 
         .no-smooth {
@@ -38,23 +41,48 @@
     </style>
 </head>
 <body>
-<div class="btn">
-    Изменить
+<div class="proxima-nova">
+    <h2>Proxima Nova</h2>
+    <div class="btn">
+        Изменить
+    </div>
+    <br>
+    <div>no smooth</div>
+    <div class="btn no-smooth">
+        Изменить
+    </div>
+    <br>
+    <div>subpixel-antialiased</div>
+    <div class="btn subpixel-antialiased">
+        Изменить
+    </div>
+    <br>
+    <div>antialiased</div>
+    <div class="btn antialiased">
+        Изменить
+    </div>
 </div>
-<br>
-<div>no smooth</div>
-<div class="btn no-smooth">
-    Изменить
-</div>
-<br>
-<div>subpixel-antialiased</div>
-<div class="btn subpixel-antialiased">
-    Изменить
-</div>
-<br>
-<div>antialiased</div>
-<div class="btn antialiased">
-    Изменить
+<hr>
+<div class="tondo">
+    <h2>Tondo</h2>
+    <div class="btn">
+        Изменить
+    </div>
+    <br>
+    <div>no smooth</div>
+    <div class="btn no-smooth">
+        Изменить
+    </div>
+    <br>
+    <div>subpixel-antialiased</div>
+    <div class="btn subpixel-antialiased">
+        Изменить
+    </div>
+    <br>
+    <div>antialiased</div>
+    <div class="btn antialiased">
+        Изменить
+    </div>
 </div>
 </body>
 </html>
