@@ -141,8 +141,8 @@ Use search to find needed section.
             <!--</li>-->
         </ul>
     </nav>
-			<span class="minifyme" data-action="minifyMenu"> 
-				<i class="fa fa-arrow-circle-left hit"></i> 
+			<span class="minifyme" data-action="minifyMenu">
+				<i class="fa fa-arrow-circle-left hit"></i>
 			</span>
 
 </aside>
@@ -170,31 +170,7 @@ Use search to find needed section.
 
                                 <div class="row">
 
-                                    <div class="col-sm-12">
-                                        <div id="myCarousel" class="carousel fade profile-carousel">
-                                            <ol class="carousel-indicators">
-                                                <!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
-                                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-                                            </ol>
-                                            <div class="carousel-inner">
-                                                <!-- Slide 1 -->
-                                                <!--<div class="item active">-->
-                                                    <!--<img src="img/header-img-black.jpg" alt="demo user">-->
-                                                <!--</div>-->
-                                                <!-- Slide 2 -->
-                                                <div class="item active">
-                                                    <img src="img/header-img-3.jpg" alt="demo user">
-                                                </div>
-                                                <!-- Slide 3 -->
-                                                <div class="item">
-                                                    <img src="img/header-img.jpg" alt="demo user">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-12">
+                                    <div class="col-sm-12" style="padding-top: 50px;">
 
                                         <div class="row">
 
@@ -202,7 +178,7 @@ Use search to find needed section.
                                                 <img src="img/avatar.jpg" alt="demo user">
 
                                                 <div class="padding-10">
-                                                    <h4 class="font-md"><strong>4 years</strong>
+                                                    <h4 class="font-md"><strong>7 years</strong>
                                                         <br>
                                                         <small>in frontend development</small>
                                                     </h4>
@@ -216,7 +192,7 @@ Use search to find needed section.
                                             <div class="col-sm-8">
                                                 <h1>Kir <span class="semi-bold">Tribunsky</span>
                                                     <br>
-                                                    <small> Frontend developer, CDU</small>
+                                                    <small> js ninja</small>
                                                 </h1>
 
                                                 <ul class="list-unstyled">
@@ -236,30 +212,11 @@ Use search to find needed section.
                                                     </li>
                                                     <li>
                                                         <p class="text-muted">
-                                                            <i class="fa fa-twitter"></i>&nbsp;&nbsp;<span
-                                                                class="txt-color-darken">octav47</span>
-                                                        </p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="text-muted">
-                                                            <i class="fa fa-github"></i>&nbsp;&nbsp;<span
+                                                            <i class="fa fa-user"></i>&nbsp;&nbsp;<span
                                                                 class="txt-color-darken">octav47</span>
                                                         </p>
                                                     </li>
                                                 </ul>
-                                                <br>
-
-                                                <p class="font-md">
-                                                    <i>js-ninja</i>
-                                                </p>
-
-                                                <p>
-
-
-                                                </p>
-                                                <br>
-                                                <br>
-
                                             </div>
                                         </div>
 
@@ -291,7 +248,7 @@ Use search to find needed section.
 <div class="page-footer">
     <div class="row">
         <div class="col-xs-12 col-sm-6">
-            <span class="txt-color-white">Kir Tribunsky © 2014-2017</span>
+            <span class="txt-color-white">Kir Tribunsky © 2014-<span class="current-year"></span></span>
         </div>
     </div>
 </div>
@@ -368,6 +325,10 @@ Use search to find needed section.
 
     })
 
+</script>
+
+<script>
+    $('.current-year').html((new Date()).getFullYear())
 </script>
 
 <!-- Yandex.Metrika counter -->
