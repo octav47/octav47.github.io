@@ -241,145 +241,150 @@ Use search to find needed section.
                         </div>
                     </div>
                 </div>
-
-                <!-- end row -->
-
-            </div>
-            <!-- END MAIN CONTENT -->
-
-        </div>
-        <!-- END MAIN PANEL -->
-
-        <!-- PAGE FOOTER -->
-        <div class="page-footer">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                    <span class="txt-color-white">Kir Tribunsky © 2014-2016</span>
-                </div>
             </div>
         </div>
-        <!-- END PAGE FOOTER -->
 
-        <!--================================================== -->
+        <!-- end row -->
 
-        <!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
-        <script data-pace-options='{ "restartOnRequestAfter": true }' src="js/plugin/pace/pace.min.js"></script>
+    </div>
+    <!-- END MAIN CONTENT -->
 
-        <!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script>
-            if (!window.jQuery) {
-                document.write('<script src="js/libs/jquery-2.1.1.min.js"><\/script>')
-            }
-        </script>
+</div>
+<!-- END MAIN PANEL -->
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-        <script>
-            if (!window.jQuery.ui) {
-                document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>')
-            }
-        </script>
+<!-- PAGE FOOTER -->
+<div class="page-footer">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <span class="txt-color-white">Kir Tribunsky © 2014-<span id="current-year"></span></span>
+        </div>
+    </div>
+</div>
+<script>
+    document.getElementById('current-year').innerHTML = (new Date()).getFullYear()
+</script>
+<!-- END PAGE FOOTER -->
 
-        <!-- IMPORTANT: APP CONFIG -->
-        <script src="../js/app.config.js"></script>
+<!--================================================== -->
 
-        <!-- JS TOUCH : include this plugin for mobile drag / drop touch events-->
-        <script src="../js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+<script data-pace-options='{ "restartOnRequestAfter": true }' src="js/plugin/pace/pace.min.js"></script>
 
-        <!-- BOOTSTRAP JS -->
-        <script src="../js/bootstrap/bootstrap.min.js"></script>
+<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        document.write('<script src="js/libs/jquery-2.1.1.min.js"><\/script>')
+    }
+</script>
 
-        <!-- CUSTOM NOTIFICATION -->
-        <script src="../js/notification/SmartNotification.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script>
+    if (!window.jQuery.ui) {
+        document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>')
+    }
+</script>
 
-        <!-- JARVIS WIDGETS -->
-        <script src="../js/smartwidgets/jarvis.widget.min.js"></script>
+<!-- IMPORTANT: APP CONFIG -->
+<script src="../js/app.config.js"></script>
 
-        <!-- EASY PIE CHARTS -->
-        <script src="../js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+<!-- JS TOUCH : include this plugin for mobile drag / drop touch events-->
+<script src="../js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script>
 
-        <!-- SPARKLINES -->
-        <script src="../js/plugin/sparkline/jquery.sparkline.min.js"></script>
+<!-- BOOTSTRAP JS -->
+<script src="../js/bootstrap/bootstrap.min.js"></script>
 
-        <!-- JQUERY VALIDATE -->
-        <script src="../js/plugin/jquery-validate/jquery.validate.min.js"></script>
+<!-- CUSTOM NOTIFICATION -->
+<script src="../js/notification/SmartNotification.min.js"></script>
 
-        <!-- JQUERY MASKED INPUT -->
-        <script src="../js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+<!-- JARVIS WIDGETS -->
+<script src="../js/smartwidgets/jarvis.widget.min.js"></script>
 
-        <!-- JQUERY SELECT2 INPUT -->
-        <script src="../js/plugin/select2/select2.min.js"></script>
+<!-- EASY PIE CHARTS -->
+<script src="../js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
 
-        <!-- JQUERY UI + Bootstrap Slider -->
-        <script src="../js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+<!-- SPARKLINES -->
+<script src="../js/plugin/sparkline/jquery.sparkline.min.js"></script>
 
-        <!-- browser msie issue fix -->
-        <script src="../js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+<!-- JQUERY VALIDATE -->
+<script src="../js/plugin/jquery-validate/jquery.validate.min.js"></script>
 
-        <!-- FastClick: For mobile devices -->
-        <script src="../js/plugin/fastclick/fastclick.min.js"></script>
+<!-- JQUERY MASKED INPUT -->
+<script src="../js/plugin/masked-input/jquery.maskedinput.min.js"></script>
 
-        <!--[if IE 8]>
+<!-- JQUERY SELECT2 INPUT -->
+<script src="../js/plugin/select2/select2.min.js"></script>
 
-        <h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
+<!-- JQUERY UI + Bootstrap Slider -->
+<script src="../js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
 
-        <![endif]-->
+<!-- browser msie issue fix -->
+<script src="../js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
 
-        <!-- MAIN APP JS FILE -->
-        <script src="../js/app.min.js"></script>
+<!-- FastClick: For mobile devices -->
+<script src="../js/plugin/fastclick/fastclick.min.js"></script>
 
-        <!-- ENHANCEMENT PLUGINS : NOT A REQUIREMENT -->
+<!--[if IE 8]>
 
-        <!-- SmartChat UI : plugin -->
-        <script src="../js/smart-chat-ui/smart.chat.ui.min.js"></script>
-        <script src="../js/smart-chat-ui/smart.chat.manager.min.js"></script>
+<h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
 
-        <!-- PAGE RELATED PLUGIN(S)
-        <script src="..."></script>-->
+<![endif]-->
 
-        <script type="text/javascript">
+<!-- MAIN APP JS FILE -->
+<script src="../js/app.min.js"></script>
 
-            // DO NOT REMOVE : GLOBAL FUNCTIONS!
+<!-- ENHANCEMENT PLUGINS : NOT A REQUIREMENT -->
 
-            $(document).ready(function () {
+<!-- SmartChat UI : plugin -->
+<script src="../js/smart-chat-ui/smart.chat.ui.min.js"></script>
+<script src="../js/smart-chat-ui/smart.chat.manager.min.js"></script>
 
-                pageSetUp()
+<!-- PAGE RELATED PLUGIN(S)
+<script src="..."></script>-->
 
-            })
+<script type="text/javascript">
 
-        </script>
+    // DO NOT REMOVE : GLOBAL FUNCTIONS!
 
-        <!-- Yandex.Metrika counter -->
-        <script type="text/javascript">
-            (function (d, w, c) {
-                (w[c] = w[c] || []).push(function () {
-                    try {
-                        w.yaCounter31686791 = new Ya.Metrika({
-                            id: 31686791,
-                            clickmap: true,
-                            trackLinks: true,
-                            accurateTrackBounce: true,
-                            webvisor: true,
-                        })
-                    } catch (e) { }
+    $(document).ready(function () {
+
+        pageSetUp()
+
+    })
+
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function () {
+            try {
+                w.yaCounter31686791 = new Ya.Metrika({
+                    id: 31686791,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    webvisor: true,
                 })
+            } catch (e) { }
+        })
 
-                var n = d.getElementsByTagName('script')[0],
-                    s = d.createElement('script'),
-                    f = function () { n.parentNode.insertBefore(s, n) }
-                s.type = 'text/javascript'
-                s.async = true
-                s.src = 'https://mc.yandex.ru/metrika/watch.js'
+        var n = d.getElementsByTagName('script')[0],
+            s = d.createElement('script'),
+            f = function () { n.parentNode.insertBefore(s, n) }
+        s.type = 'text/javascript'
+        s.async = true
+        s.src = 'https://mc.yandex.ru/metrika/watch.js'
 
-                if (w.opera == '[object Opera]') {
-                    d.addEventListener('DOMContentLoaded', f, false)
-                } else { f() }
-            })(document, window, 'yandex_metrika_callbacks')
-        </script>
-        <noscript>
-            <div><img src="https://mc.yandex.ru/watch/31686791" style="position:absolute; left:-9999px;" alt=""/></div>
-        </noscript>
-        <!-- /Yandex.Metrika counter -->
+        if (w.opera == '[object Opera]') {
+            d.addEventListener('DOMContentLoaded', f, false)
+        } else { f() }
+    })(document, window, 'yandex_metrika_callbacks')
+</script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/31686791" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
 
 </body>
 
