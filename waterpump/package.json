@@ -1,0 +1,31 @@
+{
+  "name": "waterpump",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "author": "Kir Tribunsky",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "babel-runtime": "^6.26.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "isomorphic-fetch": "^2.2.1",
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.1",
+    "popper.js": "^1.16.0",
+    "react": "^16.11.0",
+    "react-bootstrap": "^1.0.0-beta.14",
+    "react-dom": "^16.11.0"
+  }
+}
