@@ -6,4 +6,4 @@
 			$.getScript('.' + indexjs)
 		})
 	}
-})(window, j)
+})(window)
