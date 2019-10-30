@@ -1,8 +1,8 @@
 import fetch from 'isomorphic-fetch'
 
 class Service {
-	async getStatus() {
-		const response = await fetch('/status')
+	async get(url) {
+		const response = await fetch(url)
 
 		return response
 	}

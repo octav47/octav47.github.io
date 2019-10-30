@@ -16,6 +16,7 @@
     "@babel/preset-react": "^7.6.3",
     "babel-runtime": "^6.26.0",
     "parcel-bundler": "^1.12.4",
+    "parcel-plugin-bundle-manifest": "^0.2.0",
     "prettier": "^1.18.2"
   },
   "dependencies": {
@@ -26,6 +27,7 @@
     "popper.js": "^1.16.0",
     "react": "^16.11.0",
     "react-bootstrap": "^1.0.0-beta.14",
-    "react-dom": "^16.11.0"
+    "react-dom": "^16.11.0",
+    "styled-components": "^4.4.1"
   }
 }
