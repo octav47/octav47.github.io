@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "start": "npm run clear && parcel src/index.html",
+    "build": "npm run clear && parcel build src/index.html",
+    "clear": "rm -rf dist"
   },
   "author": "Kir Tribunsky",
   "license": "ISC",

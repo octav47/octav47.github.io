@@ -77,7 +77,7 @@ class App extends Component {
 				</Navbar>
 				<Container>
 					<Row>
-						<Status />
+						<Status scheduled={scheduled} manual={manual} />
 					</Row>
 					<Row>
 						<Col lg="2" md="4" sm="6" xs="12">
