@@ -40649,7 +40649,7 @@ function () {
       var _get = (0, _asyncToGenerator2.default)(
       /*#__PURE__*/
       _regenerator.default.mark(function _callee(url) {
-        var response;
+        var response, json;
         return _regenerator.default.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -40659,9 +40659,14 @@ function () {
 
               case 2:
                 response = _context.sent;
-                return _context.abrupt("return", response);
+                _context.next = 5;
+                return response.json();
 
-              case 4:
+              case 5:
+                json = _context.sent;
+                return _context.abrupt("return", json);
+
+              case 7:
               case "end":
                 return _context.stop();
             }
@@ -41163,7 +41168,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38099" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34721" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

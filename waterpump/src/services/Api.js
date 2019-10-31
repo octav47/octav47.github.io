@@ -3,8 +3,9 @@ import fetch from 'isomorphic-fetch'
 class Service {
 	async get(url) {
 		const response = await fetch(url)
+		const json = await response.json()
 
-		return response
+		return json
 	}
 }
 
