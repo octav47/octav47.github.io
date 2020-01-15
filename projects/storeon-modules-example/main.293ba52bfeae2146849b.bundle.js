@@ -131,7 +131,7 @@
     (u.o = function(e, n) {
       return Object.prototype.hasOwnProperty.call(e, n)
     }),
-    (u.p = '/projects/storeon-modules-example'),
+    (u.p = '/projects/storeon-modules-example/'),
     (u.oe = function(e) {
       throw (console.error(e), e)
     })
