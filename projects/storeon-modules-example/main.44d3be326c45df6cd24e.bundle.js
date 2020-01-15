@@ -131,7 +131,7 @@
     (u.o = function(e, n) {
       return Object.prototype.hasOwnProperty.call(e, n)
     }),
-    (u.p = '/'),
+    (u.p = '/projects/storeon-modules-example'),
     (u.oe = function(e) {
       throw (console.error(e), e)
     })
@@ -226,7 +226,7 @@
   HQzF: function(e, n, t) {
     'use strict'
     t.d(n, 'a', function() {
-      return O
+      return j
     })
     var r = t('RXMP'),
       a = t.n(r),
@@ -254,7 +254,7 @@
       S = t.n(w),
       C = t('d3CS'),
       X = t.n(C),
-      O = new ((function() {
+      j = new ((function() {
         function e() {
           var n = this
           m()(this, e),
@@ -601,7 +601,7 @@
           e
         )
       })())(),
-      O = new ((function() {
+      j = new ((function() {
         function e() {
           w()(this, e), (this.routesMap = {})
         }
@@ -627,7 +627,7 @@
           e
         )
       })())(),
-      j = t('HQzF'),
+      O = t('HQzF'),
       z = t('LYCE'),
       L = t.n(z),
       R = t('HnXd'),
@@ -718,7 +718,7 @@
                   var e,
                     n,
                     t = X.getModulesMap(),
-                    r = O.getRoutesMap()
+                    r = j.getRoutesMap()
                   return [
                     W()(
                       (e = v()((n = G()(r))).call(n, function(e) {
@@ -761,7 +761,7 @@
                 }),
                 (r.renderRoutes = function() {
                   var e,
-                    n = O.getRoutesMap()
+                    n = j.getRoutesMap()
                   return [
                     W()((e = G()(n))).call(
                       e,
@@ -911,7 +911,7 @@
           (r = o))
         ) || r,
       he = t('9PJC'),
-      ye = j.a.StoreProvider
+      ye = O.a.StoreProvider
     function ge() {
       return (ge = b()(
         c.a.mark(function e() {
@@ -974,7 +974,7 @@
           return e.mainConfig
         }))
       ).call(t, function(e) {
-        O.registerRoutes(e.mainConfig.name, n[e.mainConfig.name].routes.default)
+        j.registerRoutes(e.mainConfig.name, n[e.mainConfig.name].routes.default)
       })
     }
     function Ee(e, n) {
@@ -984,14 +984,14 @@
           return e.mainConfig && e.stateImportPath
         }))
       ).call(t, function(e) {
-        j.a.registerState(
+        O.a.registerState(
           e.mainConfig.name,
           n[e.mainConfig.name].state.default,
           n[e.mainConfig.name].state.actions
         )
       })
       var r = he.actions
-      j.a.registerState('core', he.default, r), j.a.init()
+      O.a.registerState('core', he.default, r), O.a.init()
     }
     !(function() {
       ge.apply(this, arguments)
