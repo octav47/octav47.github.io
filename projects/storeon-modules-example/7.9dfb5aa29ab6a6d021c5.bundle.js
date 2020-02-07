@@ -1,6 +1,26 @@
 ;(window.webpackJsonp = window.webpackJsonp || []).push([
-  [5],
+  [7],
   {
+    '/WPn': function(e, a, t) {
+      'use strict'
+      var n = t('q1tI'),
+        l = t.n(n),
+        r = t('JI6e'),
+        c = t('TUci'),
+        s = t('3Z9Z')
+      a.a = function(e) {
+        var a = e.children
+        return l.a.createElement(
+          s.a,
+          null,
+          l.a.createElement(
+            r.a,
+            null,
+            l.a.createElement(c.a, { variant: 'primary' }, a)
+          )
+        )
+      }
+    },
     '7xGa': function(e, a, t) {
       'use strict'
       var n,
@@ -47,68 +67,58 @@
         (f.displayName = 'Fade'),
         (a.a = f)
     },
-    EdMw: function(e, a, t) {
+    CByF: function(e, a, t) {
       'use strict'
-      t.r(a)
       var n = t('q1tI'),
         l = t.n(n),
         r = t('55Ip'),
-        c = t('3Z9Z'),
-        s = t('JI6e'),
-        i = t('TUci'),
-        o = t('HQzF'),
-        u = t('YaAy'),
-        m = o.a.useStore
-      a.default = function() {
-        var e = m('core', 'income'),
-          a = e.core,
-          t = e.income
-        return l.a.createElement(
-          l.a.Fragment,
-          null,
-          l.a.createElement(
-            c.a,
-            null,
-            l.a.createElement(
-              s.a,
+        c = t('JI6e'),
+        s = t('TUci'),
+        i = t('3Z9Z'),
+        o = t('HQzF').a.useStore
+      a.a = function() {
+        return o('core').core.userName
+          ? null
+          : l.a.createElement(
+              i.a,
               null,
-              !a.userName &&
+              l.a.createElement(
+                c.a,
+                null,
                 l.a.createElement(
-                  i.a,
+                  s.a,
                   { variant: 'warning' },
                   'Visit ',
                   l.a.createElement(r.b, { to: '/dashboard' }, 'dashboard'),
                   ' to set your name'
                 )
-            )
-          ),
-          l.a.createElement(
-            c.a,
-            null,
-            l.a.createElement(
-              s.a,
-              null,
-              l.a.createElement(
-                i.a,
-                { variant: 'info' },
-                l.a.createElement(
-                  i.a.Heading,
-                  null,
-                  'income amount: ',
-                  t.total
-                ),
-                l.a.createElement('hr', null),
-                l.a.createElement(
-                  'p',
-                  { className: 'mb-0' },
-                  'Visit ',
-                  l.a.createElement(r.b, { to: '/income/list' }, 'list'),
-                  ' to edit data'
-                )
               )
             )
-          ),
-          l.a.createElement(u.a, null)
+      }
+    },
+    EdMw: function(e, a, t) {
+      'use strict'
+      t.r(a)
+      var n = t('q1tI'),
+        l = t.n(n),
+        r = t('CByF'),
+        c = t('dflB'),
+        s = t('/WPn')
+      a.default = function() {
+        return l.a.createElement(
+          l.a.Fragment,
+          null,
+          l.a.createElement(r.a, null),
+          l.a.createElement(c.a, {
+            label: 'Income amount',
+            storeKey: 'income',
+            listUrl: '/income/list',
+          }),
+          l.a.createElement(
+            s.a,
+            null,
+            'This page is rendered inside the Income module'
+          )
         )
       }
     },
@@ -128,9 +138,9 @@
         f = t('7xGa'),
         E = t('XQC9'),
         p = t('dbZe'),
-        w = { show: !0, transition: f.a, closeLabel: 'Close alert' },
+        v = { show: !0, transition: f.a, closeLabel: 'Close alert' },
         C = { show: 'onClose' },
-        v = i.a.forwardRef(function(e, a) {
+        w = i.a.forwardRef(function(e, a) {
           var t = Object(o.a)(e, C),
             r = t.bsPrefix,
             s = t.show,
@@ -138,10 +148,10 @@
             d = t.className,
             f = t.children,
             p = t.variant,
-            w = t.onClose,
-            v = t.dismissible,
-            N = t.transition,
-            O = Object(l.a)(t, [
+            v = t.onClose,
+            w = t.dismissible,
+            h = t.transition,
+            N = Object(l.a)(t, [
               'bsPrefix',
               'show',
               'closeLabel',
@@ -152,35 +162,35 @@
               'dismissible',
               'transition',
             ]),
-            h = Object(b.b)(r, 'alert'),
+            O = Object(b.b)(r, 'alert'),
             j = Object(u.a)(function(e) {
-              w(!1, e)
+              v(!1, e)
             }),
-            y = i.a.createElement(
+            I = i.a.createElement(
               'div',
-              Object(n.a)({ role: 'alert' }, N ? O : void 0, {
-                className: c()(d, h, p && h + '-' + p, v && h + '-dismissible'),
+              Object(n.a)({ role: 'alert' }, h ? N : void 0, {
+                className: c()(d, O, p && O + '-' + p, w && O + '-dismissible'),
               }),
-              v && i.a.createElement(E.a, { onClick: j, label: m }),
+              w && i.a.createElement(E.a, { onClick: j, label: m }),
               f
             )
-          return N
+          return h
             ? i.a.createElement(
-                N,
-                Object(n.a)({ unmountOnExit: !0, ref: a }, O, { in: s }),
-                y
+                h,
+                Object(n.a)({ unmountOnExit: !0, ref: a }, N, { in: s }),
+                I
               )
             : s
-            ? y
+            ? I
             : null
         }),
-        N = Object(d.a)('h4')
-      ;(N.displayName = 'DivStyledAsH4'),
-        (v.displayName = 'Alert'),
-        (v.defaultProps = w),
-        (v.Link = Object(m.a)('alert-link', { Component: p.a })),
-        (v.Heading = Object(m.a)('alert-heading', { Component: N })),
-        (a.a = v)
+        h = Object(d.a)('h4')
+      ;(h.displayName = 'DivStyledAsH4'),
+        (w.displayName = 'Alert'),
+        (w.defaultProps = v),
+        (w.Link = Object(m.a)('alert-link', { Component: p.a })),
+        (w.Heading = Object(m.a)('alert-heading', { Component: h })),
+        (a.a = w)
     },
     U1MP: function(e, a, t) {
       'use strict'
@@ -234,24 +244,38 @@
         (d.defaultProps = { label: 'Close' }),
         (a.a = d)
     },
-    YaAy: function(e, a, t) {
+    dflB: function(e, a, t) {
       'use strict'
       var n = t('q1tI'),
         l = t.n(n),
-        r = t('JI6e'),
-        c = t('TUci'),
-        s = t('3Z9Z')
-      a.a = function() {
+        r = t('55Ip'),
+        c = t('JI6e'),
+        s = t('TUci'),
+        i = t('3Z9Z'),
+        o = t('HQzF').a.useStore
+      a.a = function(e) {
+        var a = e.label,
+          t = e.storeKey,
+          n = e.listUrl,
+          u = o(t)[t]
         return l.a.createElement(
-          s.a,
+          i.a,
           null,
           l.a.createElement(
-            r.a,
+            c.a,
             null,
             l.a.createElement(
-              c.a,
-              { variant: 'primary' },
-              'This page is rendered inside the Income module'
+              s.a,
+              { variant: 'info' },
+              l.a.createElement(s.a.Heading, null, a, ': ', u.total),
+              l.a.createElement('hr', null),
+              l.a.createElement(
+                'p',
+                { className: 'mb-0' },
+                'Visit ',
+                l.a.createElement(r.b, { to: n }, 'list'),
+                ' to edit data'
+              )
             )
           )
         )

@@ -1,13 +1,13 @@
 !(function(e) {
   function n(n) {
     for (
-      var r, u, c = n[0], i = n[1], l = n[2], f = 0, p = [];
+      var r, u, c = n[0], i = n[1], l = n[2], f = 0, d = [];
       f < c.length;
       f++
     )
-      (u = c[f]), a[u] && p.push(a[u][0]), (a[u] = 0)
+      (u = c[f]), a[u] && d.push(a[u][0]), (a[u] = 0)
     for (r in i) Object.prototype.hasOwnProperty.call(i, r) && (e[r] = i[r])
-    for (s && s(n); p.length; ) p.shift()()
+    for (s && s(n); d.length; ) d.shift()()
     return o.push.apply(o, l || []), t()
   }
   function t() {
@@ -47,17 +47,19 @@
             return (
               u.p +
               '' +
-              ({}[e] || e) +
+              ({ 2: 'vendor~bootstrap', 3: 'vendor~bootstrap-grid' }[e] || e) +
               '.' +
               {
-                0: 'ba2d977d02aa26a71e2f',
-                3: '038c26a5ce97a7ea9658',
-                4: 'cc5fc183ce2d784b394e',
-                5: 'c9359ba33f06515fa526',
-                6: 'fdf8a705af636a4f90e2',
-                7: 'a214f8d8cf7d07b2c8ba',
-                8: '92c396df5071e48653dc',
-                9: 'e6ba7a10af3f36b2fa14',
+                0: 'c01e843727a49ab1c513',
+                2: 'cc75796d8794107567d2',
+                3: 'ab5a437c2fa5ef15d705',
+                5: '0bffcc37a79e131e15ad',
+                6: 'e53f7ce80f660f58423f',
+                7: '9dfb5aa29ab6a6d021c5',
+                8: '2eb9642bbc3d5b522b25',
+                9: '73ece58e2ad77a919bb1',
+                10: '2892381478b05890c352',
+                11: '39169d96c031ae235383',
               }[e] +
               '.bundle.js'
             )
@@ -140,13 +142,13 @@
   ;(c.push = n), (c = c.slice())
   for (var l = 0; l < c.length; l++) n(c[l])
   var s = i
-  o.push(['zfYc', 2]), t()
+  o.push(['zfYc', 4]), t()
 })({
   '9PJC': function(e, n, t) {
     'use strict'
     t.r(n),
       t.d(n, 'actions', function() {
-        return k
+        return x
       })
     var r = t('LYCE'),
       a = t.n(r),
@@ -157,28 +159,28 @@
       l = t('RXMP'),
       s = t.n(l),
       f = t('fHi0'),
-      p = t.n(f),
-      d = t('5PDf'),
-      m = t.n(d),
+      d = t.n(f),
+      p = t('5PDf'),
+      m = t.n(p),
       v = t('OWCx'),
       h = t.n(v),
-      y = t('+oHS'),
-      g = t.n(y),
-      b = t('04Ix'),
-      M = t.n(b)
+      b = t('+oHS'),
+      y = t.n(b),
+      g = t('04Ix'),
+      M = t.n(g)
     function E(e, n) {
-      var t = g()(e)
+      var t = y()(e)
       if (h.a) {
         var r = h()(e)
         n &&
           (r = m()(r).call(r, function(n) {
-            return p()(e, n).enumerable
+            return d()(e, n).enumerable
           })),
           t.push.apply(t, r)
       }
       return t
     }
-    function P(e) {
+    function k(e) {
       for (var n = 1; n < arguments.length; n++) {
         var t,
           r = null != arguments[n] ? arguments[n] : {}
@@ -190,13 +192,13 @@
         else {
           var o
           s()((o = E(Object(r)))).call(o, function(n) {
-            a()(e, n, p()(r, n))
+            a()(e, n, d()(r, n))
           })
         }
       }
       return e
     }
-    var k = {
+    var x = {
       dropStore: function() {
         return { type: 'core/drop-store' }
       },
@@ -212,16 +214,9 @@
           console.log('here'), e.dispatch('@init')
         }),
         e.on('core/set-user-name', function(e, n) {
-          return { core: P({}, e.core, { userName: n }) }
+          return { core: k({}, e.core, { userName: n }) }
         })
     }
-  },
-  BL8H: function(e, n, t) {
-    ;(e.exports = t('JPst')(!1)).push([
-      e.i,
-      '.row {\n    margin-bottom: 15px;\n}\n',
-      '',
-    ])
   },
   HQzF: function(e, n, t) {
     'use strict'
@@ -237,19 +232,19 @@
       l = t('Vi3r'),
       s = t.n(l),
       f = t('o+MX'),
-      p = t.n(f),
-      d = t('06Pm'),
-      m = t.n(d),
+      d = t.n(f),
+      p = t('06Pm'),
+      m = t.n(p),
       v = t('kA7L'),
       h = t.n(v),
-      y = t('q1tI'),
-      g = t.n(y),
-      b = t('we5D'),
-      M = t.n(b),
+      b = t('q1tI'),
+      y = t.n(b),
+      g = t('we5D'),
+      M = t.n(g),
       E = (t('PonS'), t('64/e')),
-      P = t.n(E),
-      k = t('y93t'),
-      x = t.n(k),
+      k = t.n(E),
+      x = t('y93t'),
+      P = t.n(x),
       w = t('7raJ'),
       S = t.n(w),
       C = t('d3CS'),
@@ -260,9 +255,9 @@
           m()(this, e),
             (this.StoreProvider = function(e) {
               var t = e.children
-              return g.a.createElement(P.a.Provider, { value: n.store }, t)
+              return y.a.createElement(k.a.Provider, { value: n.store }, t)
             }),
-            (this.connect = x.a),
+            (this.connect = P.a),
             (this.useStore = S.a),
             (this.withStore = function() {
               for (
@@ -272,7 +267,7 @@
               )
                 t[r] = arguments[r]
               return function(e) {
-                return n.connect.apply(n, p()(t).call(t, [e]))
+                return n.connect.apply(n, d()(t).call(t, [e]))
               }
             }),
             (this.reducersMap = {}),
@@ -288,7 +283,7 @@
                   n,
                   t = this
                 this.store = M()(
-                  p()((e = [])).call(
+                  d()((e = [])).call(
                     e,
                     s()(
                       i()((n = u()(this.reducersMap))).call(n, function(e) {
@@ -335,13 +330,6 @@
           e
         )
       })())()
-  },
-  MPmw: function(e, n, t) {
-    var r = t('BL8H')
-    'string' == typeof r && (r = [[e.i, r, '']])
-    var a = { hmr: !0, transform: void 0, insertInto: void 0 }
-    t('aET+')(r, a)
-    r.locals && (e.exports = r.locals)
   },
   zfYc: function(e, n, t) {
     'use strict'
@@ -563,20 +551,20 @@
       l = t.n(i),
       s = t('FLGM'),
       f = t.n(s),
-      p = t('zLi2'),
-      d = t.n(p),
+      d = t('zLi2'),
+      p = t.n(d),
       m = t('5PDf'),
       v = t.n(m),
       h = t('RXMP'),
-      y = t.n(h),
-      g = t('SPx3'),
-      b = t.n(g),
+      b = t.n(h),
+      y = t('SPx3'),
+      g = t.n(y),
       M = t('q1tI'),
       E = t.n(M),
-      P = t('55Ip'),
-      k = t('i8i4'),
-      x = t('06Pm'),
-      w = t.n(x),
+      k = t('55Ip'),
+      x = t('i8i4'),
+      P = t('06Pm'),
+      w = t.n(P),
       S = t('kA7L'),
       C = t.n(S),
       X = new ((function() {
@@ -629,21 +617,21 @@
       })())(),
       O = t('HQzF'),
       z = t('LYCE'),
-      L = t.n(z),
-      R = t('HnXd'),
-      F = t.n(R),
+      R = t.n(z),
+      N = t('HnXd'),
+      F = t.n(N),
       J = t('qjzJ'),
-      T = t.n(J),
+      L = t.n(J),
       q = t('fHi0'),
-      A = t.n(q),
-      H = t('OWCx'),
-      N = t.n(H),
-      Z = t('Vi3r'),
-      I = t.n(Z),
-      B = t('04Ix'),
-      D = t.n(B),
-      K = t('+oHS'),
-      G = t.n(K),
+      T = t.n(q),
+      A = t('OWCx'),
+      Z = t.n(A),
+      D = t('Vi3r'),
+      H = t.n(D),
+      I = t('04Ix'),
+      K = t.n(I),
+      B = t('+oHS'),
+      G = t.n(B),
       Y = t('KYsz'),
       W = t.n(Y),
       Q = t('o+MX'),
@@ -663,15 +651,14 @@
       le = t('JI6e'),
       se = t('Mrkz'),
       fe = t('+YzT'),
-      pe = t('GWEY')
-    t('q4sD'), t('L4hS'), t('MPmw')
-    function de(e, n) {
+      de = t('GWEY')
+    function pe(e, n) {
       var t = G()(e)
-      if (N.a) {
-        var r = N()(e)
+      if (Z.a) {
+        var r = Z()(e)
         n &&
           (r = v()(r).call(r, function(n) {
-            return A()(e, n).enumerable
+            return T()(e, n).enumerable
           })),
           t.push.apply(t, r)
       }
@@ -731,15 +718,16 @@
                         return (
                           e.push(
                             E.a.createElement(
-                              pe.a,
+                              de.a,
                               {
+                                key: t[n].name,
                                 title: t[n].fullName,
                                 id: 'menu-module-'.concat(n),
                               },
                               f()(a).call(a, function(e) {
                                 var t
                                 return E.a.createElement(
-                                  pe.a.Item,
+                                  de.a.Item,
                                   {
                                     key: e.key,
                                     href: V()((t = '#/'.concat(n))).call(
@@ -775,16 +763,16 @@
                                 var t,
                                   r = null != arguments[n] ? arguments[n] : {}
                                 if (n % 2)
-                                  y()((t = de(Object(r), !0))).call(t, function(
+                                  b()((t = pe(Object(r), !0))).call(t, function(
                                     n
                                   ) {
-                                    D()(e, n, r[n])
+                                    K()(e, n, r[n])
                                   })
-                                else if (T.a) F()(e, T()(r))
+                                else if (L.a) F()(e, L()(r))
                                 else {
                                   var a
-                                  y()((a = de(Object(r)))).call(a, function(n) {
-                                    L()(e, n, A()(r, n))
+                                  b()((a = pe(Object(r)))).call(a, function(n) {
+                                    R()(e, n, T()(r, n))
                                   })
                                 }
                               }
@@ -806,35 +794,28 @@
                           })
                         return V()((a = [])).call(
                           a,
-                          I()(e),
-                          I()(
+                          H()(e),
+                          H()(
                             f()(o).call(o, function(e) {
-                              var n, r
-                              return e.redirect
-                                ? E.a.createElement(oe.a, {
-                                    exact: !e.noExact,
-                                    from: e.route,
-                                    to: e.isSystem
-                                      ? V()(
-                                          (n = ''.concat(
-                                            'core' === t ? '' : '/' + t
-                                          ))
-                                        ).call(n, e.redirect)
-                                      : V()((r = '/'.concat(t))).call(
-                                          r,
-                                          e.redirect
-                                        ),
+                              if (e.isRedirect) {
+                                var n = 'core' === t ? '' : '/' + t
+                                return E.a.createElement(oe.a, {
+                                  key: e.key,
+                                  exact: e.exact,
+                                  from: n + e.from,
+                                  to: n + e.to,
+                                })
+                              }
+                              return E.a.createElement(oe.b, {
+                                exact: !e.noExact,
+                                key: e.key,
+                                path: e.route,
+                                component: function() {
+                                  return E.a.createElement(me, {
+                                    module: e.component,
                                   })
-                                : E.a.createElement(oe.b, {
-                                    exact: !e.noExact,
-                                    key: e.key,
-                                    path: e.route,
-                                    component: function() {
-                                      return E.a.createElement(me, {
-                                        module: e.component,
-                                      })
-                                    },
-                                  })
+                                },
+                              })
                             })
                           )
                         )
@@ -854,20 +835,29 @@
                   value: function() {
                     return E.a.createElement(
                       ce.a,
-                      null,
+                      { fluid: !0, className: 'p-0' },
                       E.a.createElement(
                         ie.a,
-                        null,
+                        { className: 'mb-3' },
                         E.a.createElement(
                           le.a,
                           null,
                           E.a.createElement(
                             se.a,
-                            { bg: 'dark', variant: 'dark' },
+                            { bg: 'dark', variant: 'dark', expand: 'lg' },
                             E.a.createElement(
                               se.a.Brand,
                               { href: '#dashboard' },
-                              'Storeon module example'
+                              E.a.createElement(
+                                'span',
+                                { className: 'd-sm-inline-block d-none' },
+                                'Storeon module example'
+                              ),
+                              E.a.createElement(
+                                'span',
+                                { className: 'd-sm-none d-inline-block' },
+                                'Storeon example'
+                              )
                             ),
                             E.a.createElement(se.a.Toggle, {
                               'aria-controls': 'basic-navbar-nav',
@@ -890,15 +880,24 @@
                         )
                       ),
                       E.a.createElement(
-                        oe.d,
-                        null,
-                        this.renderRoutes(),
-                        E.a.createElement(oe.b, {
-                          exact: !0,
-                          component: function() {
-                            return E.a.createElement('div', null, 'not found')
-                          },
-                        })
+                        ce.a,
+                        { fluid: !0 },
+                        E.a.createElement(
+                          oe.d,
+                          null,
+                          E.a.createElement(oe.a, {
+                            exact: !0,
+                            from: '/',
+                            to: '/dashboard',
+                          }),
+                          this.renderRoutes(),
+                          E.a.createElement(oe.b, {
+                            exact: !0,
+                            component: function() {
+                              return E.a.createElement('div', null, 'not found')
+                            },
+                          })
+                        )
                       )
                     )
                   },
@@ -911,9 +910,9 @@
           (r = o))
         ) || r,
       he = t('9PJC'),
-      ye = O.a.StoreProvider
-    function ge() {
-      return (ge = b()(
+      be = O.a.StoreProvider
+    function ye() {
+      return (ye = g()(
         c.a.mark(function e() {
           var n, r, a, o, u
           return c.a.wrap(function(e) {
@@ -924,8 +923,10 @@
                     (e.t0 = f.a),
                     (e.next = 3),
                     l.a.all([
-                      t.e(9).then(t.bind(null, 'shNG')),
-                      t.e(3).then(t.bind(null, '0zPK')),
+                      t.e(11).then(t.bind(null, 'shNG')),
+                      t.e(5).then(t.bind(null, '0zPK')),
+                      t.e(2).then(t.t.bind(null, 'q4sD', 7)),
+                      t.e(3).then(t.t.bind(null, 'L4hS', 7)),
                     ])
                   )
                 case 3:
@@ -935,17 +936,17 @@
                       return e.default
                     }),
                     (r = (0, e.t0)(e.t1).call(e.t2, e.t3)),
-                    (a = d()(r, 2)),
+                    (a = p()(r, 2)),
                     (o = a[0]),
                     (u = a[1]),
-                    be(o),
+                    ge(o),
                     Me(o, u),
                     Ee(o, u),
-                    Object(k.render)(
+                    Object(x.render)(
                       E.a.createElement(
-                        P.a,
+                        k.a,
                         null,
-                        E.a.createElement(ye, null, E.a.createElement(ve, null))
+                        E.a.createElement(be, null, E.a.createElement(ve, null))
                       ),
                       document.querySelector('[data-root]')
                     )
@@ -957,9 +958,9 @@
         })
       )).apply(this, arguments)
     }
-    function be(e) {
+    function ge(e) {
       var n
-      y()(
+      b()(
         (n = v()(e).call(e, function(e) {
           return e.mainConfig
         }))
@@ -969,7 +970,7 @@
     }
     function Me(e, n) {
       var t
-      y()(
+      b()(
         (t = v()(e).call(e, function(e) {
           return e.mainConfig
         }))
@@ -979,7 +980,7 @@
     }
     function Ee(e, n) {
       var t
-      y()(
+      b()(
         (t = v()(e).call(e, function(e) {
           return e.mainConfig && e.stateImportPath
         }))
@@ -994,7 +995,7 @@
       O.a.registerState('core', he.default, r), O.a.init()
     }
     !(function() {
-      ge.apply(this, arguments)
+      ye.apply(this, arguments)
     })()
   },
 })
