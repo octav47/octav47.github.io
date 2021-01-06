@@ -11,6 +11,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
@@ -26,7 +31,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/_posts" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -46,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609871852687</updated>
-      <workItem from="1609871855035" duration="4148000" />
+      <workItem from="1609871855035" duration="4588000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1609872799805</created>
@@ -88,22 +93,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="278" y="44" key="CommitChangelistDialog2" timestamp="1609929114135">
+    <state x="278" y="23" width="883" height="824" key="CommitChangelistDialog2" timestamp="1609950339890">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="278" y="44" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1609929114135" />
+    <state x="278" y="23" width="883" height="824" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1609950339890" />
     <state x="444" y="159" key="RollbackChangesDialog" timestamp="1609876826905">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="444" y="159" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1609876826905" />
-    <state x="221" y="89" key="SettingsEditor" timestamp="1609877060208">
+    <state x="221" y="89" key="SettingsEditor" timestamp="1609950502035">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1609877060208" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1609949822639">
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1609950502035" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1609950089250">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1609949822639" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1609950089250" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609949802630">
       <screen x="0" y="23" width="1440" height="824" />
     </state>
