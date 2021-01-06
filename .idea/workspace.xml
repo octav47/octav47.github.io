@@ -45,7 +45,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609871852687</updated>
-      <workItem from="1609871855035" duration="2192000" />
+      <workItem from="1609871855035" duration="3634000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1609872799805</created>
@@ -87,10 +87,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="278" y="44" key="CommitChangelistDialog2" timestamp="1609877529430">
+    <state x="278" y="44" key="CommitChangelistDialog2" timestamp="1609929114135">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="278" y="44" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1609877529430" />
+    <state x="278" y="44" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1609929114135" />
     <state x="444" y="159" key="RollbackChangesDialog" timestamp="1609876826905">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
