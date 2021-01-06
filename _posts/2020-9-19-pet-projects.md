@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Пет-проекты и челленджи.
+title: Пет-проекты и челленджи
 ---
 
 <img class="blog-pic" src="https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/119881669_208726360672543_8384411855193848187_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=107&_nc_ohc=2Uux-f0QQQMAX9iI6UU&tp=1&oh=8b345d53849f169c911123087ece53f2&oe=601F335A" alt="Me">
@@ -29,6 +29,6 @@ title: Пет-проекты и челленджи.
 
 В-четвертых, растёт уровень экспертизы в технологиях и их подборе для проекта. Со временем становится проще выбирать инструменты для конкретных задач, а не брать стандартную связку react + redux + webpack.
 
-Инструменты, которые я открыл для себя в ходе таких челленджей: parcel, rollup, svelte, storeon.
+Инструменты, которые я открыл для себя в ходе таких челленджей: [parcel](https://parceljs.org/), [rollup](https://rollupjs.org/), [svelte](https://svelte.dev/), [storeon](https://github.com/storeon/storeon).
 
 О них я напишу подробнее в следующий постах.
