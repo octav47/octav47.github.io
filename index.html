@@ -3,8 +3,8 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.posts.reverse.drop(1).reverse %}
-    <article class="post">
+  {% for post in site %}
+    <article class="post" data-url="{{ site.baseurl }}{{ post.url }}">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
