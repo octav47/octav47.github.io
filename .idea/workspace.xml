@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e12c5fbe-5858-4b89-9d56-25e5a4eb5655" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_sass/_custom.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/svg-icons.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/svg-icons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-9-14-init.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2020-9-14-init.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/_highlights.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/_highlights.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/_reset.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/_svg-icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/_svg-icons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609871852687</updated>
-      <workItem from="1609871855035" duration="5761000" />
+      <workItem from="1609871855035" duration="5900000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1609872799805</created>
@@ -103,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609951253046</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update">
+      <created>1609951868590</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609951868590</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,10 +118,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="451" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1609950510669" />
-    <state x="278" y="23" width="883" height="824" key="CommitChangelistDialog2" timestamp="1609951252872">
+    <state x="278" y="23" width="883" height="824" key="CommitChangelistDialog2" timestamp="1609951868410">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="278" y="23" width="883" height="824" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1609951252872" />
+    <state x="278" y="23" width="883" height="824" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1609951868410" />
     <state x="444" y="159" key="RollbackChangesDialog" timestamp="1609876826905">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -131,10 +130,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1609950502035" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1609951255108">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1609951870192">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1609951255108" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1609951870192" />
     <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609949802630">
       <screen x="0" y="23" width="1440" height="824" />
     </state>
