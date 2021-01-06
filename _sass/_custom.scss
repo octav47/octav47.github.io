@@ -3,3 +3,12 @@
   display: block;
   margin: 0 0 15px 0;
 }
+
+article.post[data-url="/Hello-World/"] {
+  display: none;
+}
+
+.posts>.post:nth-last-child(2) {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
