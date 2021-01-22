@@ -12,3 +12,8 @@ article.post[data-url="/Hello-World/"] {
   padding-bottom: 1em;
   border-bottom: none;
 }
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+}

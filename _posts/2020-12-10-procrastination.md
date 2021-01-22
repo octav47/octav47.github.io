@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Прокрастинировать нужно
+geoTitle: Аптекарский огород
+geoHref: https://www.instagram.com/explore/locations/572984536122911/
 ---
 
 <img class="blog-pic" src="https://instagram.fhel3-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/131076850_945839559155790_5518853582099780220_n.jpg?_nc_ht=instagram.fhel3-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=w3tOxF4vnc8AX9b5_kJ&tp=1&oh=d6a88e559f2984aacaeec1c88a1ba15c&oe=601F2D33" alt="Coffee and sea">
