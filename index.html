@@ -18,7 +18,7 @@ layout: default
         __posts__.push({
             id: "{{ site.baseurl }}{{ post.url }}",
             title: "{{ post.title }}",
-            pinned: '{{ post.pinned }}' || false,
+            pinned: !!'{{ post.pinned }}',
         })
     </script>
     {% endfor %}
