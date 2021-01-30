@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="posts">
-    {% for post in site.posts | sort 'pinned' %}
+    {% for post in site.posts | sort 'pinned' | reverse %}
     <article class="post" data-url="{{ site.baseurl }}{{ post.url }}" data-pinned="{{ post.pinned || false }}">
 
         <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
