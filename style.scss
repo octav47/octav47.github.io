@@ -276,14 +276,18 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  //margin-top: 50px;
+  //border-top: 1px solid #ddd;
+  //border-bottom: 1px solid #ddd;
   background-color: $lightGray;
 }
 
 footer {
-  padding: 20px 0;
+  padding: 8px 0;
   text-align: center;
 }
 
