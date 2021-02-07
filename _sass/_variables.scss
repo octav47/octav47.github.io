@@ -18,9 +18,48 @@ $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
 // Mobile breakpoints
 @mixin mobile {
   @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (max-width: map-get($grid-breakpoints, "sm")) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (max-width: map-get($grid-breakpoints, "md")) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (max-width: map-get($grid-breakpoints, "lg")) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (max-width: map-get($grid-breakpoints, "xl")) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media screen and (max-width: map-get($grid-breakpoints, "xxl")) {
     @content;
   }
 }

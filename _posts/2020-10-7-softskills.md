@@ -1,10 +1,14 @@
 ---
 layout: post
 title: Взаимодействие с коллегами
+excerpt_separator: <!--more-->
 ---
 
-<img class="blog-pic" src="https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p750x750/120851655_376024850191089_7015362036410103820_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=109&_nc_ohc=2ePEJtOUybgAX_s2fx2&tp=1&oh=02efe45b365db99c537286da0b56efd3&oe=601E868F" alt="Microphone">
+![Softskills](/assets/softskills.jpg)
+
 Очередной пост я хотел посвятить теме «Код для людей», «пишите человекочитаемо» etc. Накатал гигантскую простыню, и, пока сокращал текст, понял, что сначала нужно поднять тему на уровень выше. Сегодня будут тезисы об общении внутри команды.
+
+<!--more-->
 
 ✅ Есть вопрос к коллегам? Напишите его текстом.
 

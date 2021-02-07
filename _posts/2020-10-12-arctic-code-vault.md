@@ -1,10 +1,14 @@
 ---
 layout: post
 title: Arctic Code Vault
+excerpt_separator: <!--more-->
 ---
 
-<img class="blog-pic" src="https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/121259714_796435764481967_4483366329712985365_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=111&_nc_ohc=bUhtT7zXRR8AX_jz9yS&tp=1&oh=54abbc6333df02ecaa5f8fcee44da6cd&oe=601E47FB" alt="Screenshot of github profile">
+![Arctic Code Vault](/assets/arctic-code-vault.jpg)
+
 Мои старые правки в READme.md к дочерним либам react-dropzone попали в историю: их записали на плёнку и сложили вместе с кучей другого опенсорса в подземное хранилище где-то в Арктике.
+
+<!--more-->
 
 Кстати, правки я сделал, пока на работе ваял шикарный компонент для загрузки файлов. Я вовсе не хвастаюсь сейчас тем, что он такой классный получился, просто компонент так назвали: AwesomeFileUploader (за шикарное название спасибо коллеге [@dart_vitalus](https://instagram.com/dart_vitalus)).
 

@@ -1,12 +1,16 @@
 ---
 layout: post
 title: Немного об опенсоурсе
+excerpt_separator: <!--more-->
 ---
 
-<img class="blog-pic" src="https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/119562753_1238439383166257_1617128698319031009_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=QEBF82721BsAX8_hnYh&tp=1&oh=ccec678ee9ccedc084ed95abfbc7f63a&oe=602067AF" alt="Opensource">
+![Opensource](/assets/opensource.jpg)
+
 Делаете какую-то мини-либу для себя? Поделитесь ею с сообществом!
 
 Страшно, что кто-то увидит ваш код и раскритикует? Воспринимайте это как бесплатные советы для собственного роста
+
+<!--more-->
 
 <img class="blog-pic" src="https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/119515932_113174097076296_860524349938304656_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=100&_nc_ohc=ai975maTfyoAX9SKwCd&tp=1&oh=3b4043c5cd4bf51632f4d335dc589716&oe=601E3857" alt="Newick.js logo">
 

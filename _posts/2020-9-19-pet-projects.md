@@ -1,10 +1,14 @@
 ---
 layout: post
 title: Пет-проекты и челленджи
+excerpt_separator: <!--more-->
 ---
 
-<img class="blog-pic" src="https://scontent-waw1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/119881669_208726360672543_8384411855193848187_n.jpg?_nc_ht=scontent-waw1-1.cdninstagram.com&_nc_cat=107&_nc_ohc=2Uux-f0QQQMAX9iI6UU&tp=1&oh=8b345d53849f169c911123087ece53f2&oe=601F335A" alt="Me">
+![Pet projects](/assets/pet-projects.jpg)
+
 Каждый раз, когда я один куда-то еду/лечу, я устраиваю себе небольшой челлендж.
+
+<!--more-->
 
 Суть его такова: придумать и сделать какой-то пет-проект.
 

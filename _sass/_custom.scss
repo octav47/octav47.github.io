@@ -1,11 +1,29 @@
+@import "variables";
+
 #main {
   padding-bottom: 56px;
 }
 
-.blog-pic {
-  max-height: 350px;
-  display: block;
-  margin: 0 0 15px 0;
+.entry img {
+  //max-height: 350px;
+  //display: block;
+  //margin: 0 0 15px 0;
+
+  /* The image used */
+  background-image: url("/assets/shot_in_the_leg.jpg");
+  /* Set a specific height */
+  max-width: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@include sm {
+  .entry img {
+    max-height: unset;
+  }
 }
 
 article.post[data-url="/Hello-World/"] {
@@ -20,4 +38,26 @@ article.post[data-url="/Hello-World/"] {
 .post-footer {
   display: flex;
   justify-content: space-between;
+}
+
+.parallax {
+  /* Set a specific height */
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-around;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+  }
 }

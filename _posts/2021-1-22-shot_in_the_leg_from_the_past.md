@@ -1,12 +1,16 @@
 ---
 layout: post
 title: Выстрел в ногу сквозь года
+excerpt_separator: <!--more-->
 geoTitle: Starbucks
 geoHref: https://www.instagram.com/explore/locations/995264483/starbucks-russia/
 ---
 
-<img class="blog-pic" src="https://instagram.fhel3-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/141443452_435296677828204_6963865352650437136_n.jpg?_nc_ht=instagram.fhel3-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=JKaJuS4EkeUAX9VIf6F&tp=1&oh=c784792e6141b3015285759d8084fb95&oe=6035FD88" alt="Me at Starbuck">
+![Me at Starbucks](/assets/shot_in_the_leg.jpg)
+
 Если вы никогда не костылили, то вы не программист.
+
+<!--more-->
 
 У меня есть проект Radio Hustle и SPA [app.radio-hustle.com](app.radio-hustle.com) для него. Веб-приложение на реакте существует с тех времён, когда он ещё был с нулём в мажорной версии.
 

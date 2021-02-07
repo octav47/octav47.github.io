@@ -1,3 +1,9 @@
 <script>
-    var __posts__ = []
+    window.addEventListener('DOMContentLoaded', function () {
+        var helloWorldPost = document.querySelector('[data-url="/Hello-World/"]')
+
+        if (helloWorldPost) {
+            helloWorldPost.parentNode.removeChild(helloWorldPost)
+        }
+    })
 </script>

@@ -3,8 +3,8 @@ layout: default
 ---
 
 <div class="posts">
-    {% for post in site.posts | sort 'pinned' | reverse %}
-    <article class="post" data-url="{{ site.baseurl }}{{ post.url }}" data-pinned="{{ post.pinned || false }}">
+    {% for post in paginator.posts %}
+    <article class="post" data-url="{{ site.baseurl }}{{ post.url }}" data-pinned="{{ post.pinned }}">
 
         <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
@@ -14,12 +14,29 @@ layout: default
 
         <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Далее...</a>
     </article>
-    <script>
-        __posts__.push({
-            id: "{{ site.baseurl }}{{ post.url }}",
-            title: "{{ post.title }}",
-            pinned: !!'{{ post.pinned }}',
-        })
-    </script>
     {% endfor %}
+</div>
+
+<div class="pagination">
+    <div>
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous">
+            <i class="fas fa-2x fa-chevron-circle-left"></i>
+        </a>
+        {% else %}
+        <span class="previous">
+        <i class="fas fa-2x fa-chevron-circle-left"></i>
+    </span>
+        {% endif %}
+        <span class="page_number ">
+    Страница: {{ paginator.page }} из {{ paginator.total_pages }}
+  </span>
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next">
+            <i class="fas fa-2x fa-chevron-circle-right"></i>
+        </a>
+        {% else %}
+        <i class="fas fa-2x fa-chevron-circle-right"></i>
+        {% endif %}
+    </div>
 </div>
