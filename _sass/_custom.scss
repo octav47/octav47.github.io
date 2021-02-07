@@ -22,7 +22,7 @@
 
 @include sm {
   .entry img {
-    max-height: unset;
+    min-width: 100%;
   }
 }
 
