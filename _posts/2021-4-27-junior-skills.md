@@ -6,7 +6,7 @@ geoTitle: Аптекарский огород
 geoHref: https://www.instagram.com/explore/locations/572984536122911/
 ---
 
-![Me at Starbucks](/assets/ruopen.jpg)
+![RuOpen 2021](/assets/ruopen.jpg)
 
 В этом блоге я ранее упоминал вскользь о своём хобби — парных танцах. Более семи лет занимаюсь хастлом, меньше года бальными и вот на прошлых выходных ходил на соревнования по новому для меня танцу — West Coast Swing.
 
