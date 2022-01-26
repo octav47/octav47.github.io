@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e12c5fbe-5858-4b89-9d56-25e5a4eb5655" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mf/window/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mf/window/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mf/window/dist/parcel-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/mf/window/dist/parcel-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mf/window/dist/src.3d0280eb.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mf/window/dist/src.3d0280eb.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mf/window/dist/src.b4d45839.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mf/window/dist/src.b4d45839.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mf/window/entry.js" beforeDir="false" afterPath="$PROJECT_DIR$/mf/window/entry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mf/window/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/mf/window/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mf/window/src/components/PumpBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/mf/window/src/components/WindowBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mf/window/src/components/Status.js" beforeDir="false" afterPath="$PROJECT_DIR$/mf/window/src/components/Status.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mf/window/src/services/Pump.js" beforeDir="false" afterPath="$PROJECT_DIR$/mf/window/src/services/Window.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,21 +112,7 @@
       <workItem from="1627461255027" duration="853000" />
       <workItem from="1628623523220" duration="3354000" />
       <workItem from="1638474556252" duration="697000" />
-      <workItem from="1643213314336" duration="2318000" />
-    </task>
-    <task id="LOCAL-00001" summary="update">
-      <created>1609872799805</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1609872799805</updated>
-    </task>
-    <task id="LOCAL-00002" summary="update">
-      <created>1609872929241</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1609872929241</updated>
+      <workItem from="1643213314336" duration="2740000" />
     </task>
     <task id="LOCAL-00003" summary="update">
       <created>1609876757232</created>
@@ -468,7 +443,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643213489971</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="update">
+      <created>1643216428758</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1643216428758</updated>
+    </task>
+    <task id="LOCAL-00051" summary="update">
+      <created>1643216446847</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1643216446847</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
