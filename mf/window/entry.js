@@ -1,5 +1,5 @@
 ;(function(w) {
-	w.__waterPump__ = function($) {
+	w.__entry__ = function($) {
 		$.getJSON(
 			'http://tribunsky.com/mf/window/dist/parcel-manifest.json',
 			function(manifest) {

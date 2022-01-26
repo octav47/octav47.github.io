@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e12c5fbe-5858-4b89-9d56-25e5a4eb5655" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/mf/window/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mf/window/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mf/window/dist/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mf/window/dist/parcel-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mf/window/dist/src.3d0280eb.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mf/window/dist/src.3d0280eb.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mf/window/dist/src.b4d45839.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mf/window/dist/src.b4d45839.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mf/window/entry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mf/window/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mf/window/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mf/window/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mf/window/src/components/Block.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mf/window/src/components/Container.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mf/window/src/components/PumpBlock.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mf/window/src/components/Status.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mf/window/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mf/window/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mf/window/src/services/Api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mf/window/src/services/Pump.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="e12c5fbe-5858-4b89-9d56-25e5a4eb5655" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mf/window/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mf/window/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mf/window/dist/parcel-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/mf/window/dist/parcel-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mf/window/dist/src.3d0280eb.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mf/window/dist/src.3d0280eb.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mf/window/dist/src.b4d45839.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mf/window/dist/src.b4d45839.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mf/window/entry.js" beforeDir="false" afterPath="$PROJECT_DIR$/mf/window/entry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mf/window/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/mf/window/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mf/window/src/components/PumpBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/mf/window/src/components/WindowBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mf/window/src/components/Status.js" beforeDir="false" afterPath="$PROJECT_DIR$/mf/window/src/components/Status.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mf/window/src/services/Pump.js" beforeDir="false" afterPath="$PROJECT_DIR$/mf/window/src/services/Window.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +56,9 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/mf/window/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -95,6 +87,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/mf/window/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -116,7 +123,7 @@
       <workItem from="1627461255027" duration="853000" />
       <workItem from="1628623523220" duration="3354000" />
       <workItem from="1638474556252" duration="697000" />
-      <workItem from="1643213314336" duration="167000" />
+      <workItem from="1643213314336" duration="2318000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1609872799805</created>
@@ -454,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628625482965</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="update">
+      <created>1643213489971</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1643213489971</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,5 +488,9 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
