@@ -1,42 +1,19 @@
----
-layout: default
----
 
-<div class="posts">
-    {% for post in paginator.posts %}
-    <article class="post" data-url="{{ site.baseurl }}{{ post.url }}" data-pinned="{{ post.pinned }}">
-
-        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-        <div class="entry">
-            {{ post.excerpt }}
-        </div>
-
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Далее...</a>
-    </article>
-    {% endfor %}
-</div>
-
-<div class="pagination">
-    <div>
-        {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="previous">
-            <i class="fas fa-2x fa-chevron-circle-left"></i>
-        </a>
-        {% else %}
-        <span class="previous">
-        <i class="fas fa-2x fa-chevron-circle-left"></i>
-    </span>
-        {% endif %}
-        <span class="page_number ">
-    Страница: {{ paginator.page }} из {{ paginator.total_pages }}
-  </span>
-        {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="next">
-            <i class="fas fa-2x fa-chevron-circle-right"></i>
-        </a>
-        {% else %}
-        <i class="fas fa-2x fa-chevron-circle-right"></i>
-        {% endif %}
-    </div>
-</div>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>core</title>
+      <script>
+      // Allow to use react dev-tools inside the examples
+      try { window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.parent.__REACT_DEVTOOLS_GLOBAL_HOOK__; } catch {}
+      </script>
+      <!-- minimal css resets -->
+      <style> body { margin: 0; } </style>
+    <script defer src="/main.efea3ed9e7d463d99577.js"></script><link href="/static/css/main.ddb99816.css" rel="stylesheet"></head>
+    <body>
+      <div id="root"></div>
+    </body>
+  </html>
+  
