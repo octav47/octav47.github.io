@@ -5,117 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e12c5fbe-5858-4b89-9d56-25e5a4eb5655" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/kir/.npmrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/assets/arctic-code-vault.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/assets/avatar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/assets/init.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/assets/opensource.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/assets/pet-projects.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/assets/procrastination.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/assets/ruopen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/assets/samomu_ne_proshe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/assets/shot_in_the_leg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/assets/softskills.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/components/Contacts/Contacts.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/components/Footer/Footer.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/components/Footer/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/components/Header/Header.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/components/Header/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/components/Home/Home.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/components/Home/Home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/components/Page/Page.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/components/Page/Page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/components/PageWrapper/PageWrapper.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/components/Post/Post.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/components/Post/Post.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/components/Root/Root.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/components/Root/Root.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/styles/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/envs/my-react/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/envs/my-react/jest/jest.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/envs/my-react/my-react.aspect.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/envs/my-react/my-react.docs.mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/envs/my-react/my-react.main.runtime.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/envs/my-react/my-react.preview.runtime.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/envs/my-react/typescript/styles.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/envs/my-react/typescript/ts-transformer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/envs/my-react/typescript/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/envs/my-react/webpack/webpack-transformers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/node-app/app.node-app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/node-app/hello-world.app-root.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/node-app/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/node-app/node-app.docs.mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/service/context/AppContext.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/service/context/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/service/navigation/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/service/post/assets/arctic-code-vault.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/service/post/assets/avatar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/service/post/assets/init.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/service/post/assets/opensource.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/service/post/assets/pet-projects.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/service/post/assets/procrastination.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/service/post/assets/ruopen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/service/post/assets/samomu_ne_proshe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/service/post/assets/shot-in-the-leg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/service/post/assets/softskills.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/service/post/postData.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/article/Article.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/article/Article.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/avatar/Avatar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/avatar/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/back-button/BackButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/box/box.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/box/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/breadcrumbs/breadcrumbs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/breadcrumbs/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/button/Button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/button/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/container/Container.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/container/Container.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/icon/Icon.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/icon/Icon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/icon/Icons.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/link/Link.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/link/RouterLink.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/me/Me.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/me/avatar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/me/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/menu/MenuButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/menu/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/pagination/Pagination.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/pagination/Pagination.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/pagination/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/paper/Paper.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/paper/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/short-post/ShortPost.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/short-post/ShortPost.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/stack/Stack.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/stack/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/typography/ButtonText.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/typography/H.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/typography/Text.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/typography/TextSecondary.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kir/landing/ui/typography/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/me/.bitmap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/me/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/me/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/me/.prettierrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/me/.vscode/launch.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/me/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/me/my-scope/core/app.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/me/my-scope/core/core.app-root.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/me/my-scope/core/core.compositions.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/me/my-scope/core/core.docs.mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/me/my-scope/core/core.react-app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/me/my-scope/core/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/me/pnpm-lock.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/me/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/me/types/asset.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/me/types/style.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/me/workspace.jsonc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core/components/Home/LinksBlock.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/app.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/assets/arctic-code-vault.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/assets/avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/assets/init.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/assets/opensource.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/assets/pet-projects.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/assets/procrastination.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/assets/ruopen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/assets/samomu_ne_proshe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/assets/shot_in_the_leg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/assets/softskills.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/components/Contacts/Contacts.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/components/Footer/Footer.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/components/Footer/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/components/Header/Header.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/components/Header/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/components/Home/Home.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/components/Home/Home.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/components/Home/LinksBlock.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/components/Page/Page.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/components/Page/Page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/components/PageWrapper/PageWrapper.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/components/Post/Post.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/components/Post/Post.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/components/Root/Root.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/components/Root/Root.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/core.app-root.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/core.compositions.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/core.docs.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/core.react-app.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/landing/apps/core1/styles/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kir/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kir/.bitmap" beforeDir="false" afterPath="$PROJECT_DIR$/kir/.bitmap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kir/landing/apps/core/components/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/kir/landing/apps/core/components/Home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kir/landing/apps/core/core.app-root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/kir/landing/apps/core/core.app-root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kir/landing/apps/core/core.react-app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/kir/landing/apps/core/core.react-app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kir/landing/ui/link/RouterLink.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/kir/landing/ui/link/RouterLink.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kir/landing/ui/menu/MenuButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/kir/landing/ui/menu/MenuButton.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +92,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/kir/projects/octav47.github.io/kir/landing/apps/core/components/Home",
+    "last_opened_file_path": "/Users/kir/projects/octav47.github.io/kir/landing/apps/core",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -177,11 +107,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/kir/landing/apps/core" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/kir/landing/apps/core/components/Home" />
       <recent name="$PROJECT_DIR$/kir/landing/ui/me" />
       <recent name="$PROJECT_DIR$/kir/landing/ui/typography" />
-      <recent name="$PROJECT_DIR$/kir/landing/service/post" />
-      <recent name="$PROJECT_DIR$/kir/landing/apps/core/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/kir/landing/apps/core/components/Footer" />
@@ -243,13 +173,6 @@
       <workItem from="1666964069139" duration="12105000" />
       <workItem from="1667388155774" duration="12647000" />
       <workItem from="1667823426177" duration="11352000" />
-    </task>
-    <task id="LOCAL-00003" summary="update">
-      <created>1609876757232</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1609876757232</updated>
     </task>
     <task id="LOCAL-00004" summary="update">
       <created>1609876849201</created>
@@ -587,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643216446847</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="update">
+      <created>1668516217422</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1668516217422</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -627,7 +557,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/kir/landing/apps/core/components/Root/Root.tsx</url>
+          <url>file://$PROJECT_DIR$/kir/landing/apps/core1/components/Root/Root.tsx</url>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
