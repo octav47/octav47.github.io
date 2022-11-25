@@ -1,0 +1,60 @@
+{
+  "1.0.0..e8ae1bf431a9572b623d.chunk.js": "1.0.0..e8ae1bf431a9572b623d.chunk.js",
+  "1.0.0.564.bundle.js": "1.0.0.564.bundle.js",
+  "1.0.0.564.bundle.js.LICENSE.txt": "1.0.0.564.bundle.js.LICENSE.txt",
+  "arctic-code-vault.jpg": "arctic-code-vault.jpg",
+  "avatar.jpg": "avatar.jpg",
+  "blog/page/1/index.html": "blog/page/1/index.html",
+  "contacts/index.html": "contacts/index.html",
+  "entrypoints": {
+    "main": {
+      "assets": {
+        "js": [
+          "1.0.0.564.bundle.js",
+          "1.0.0.main.bundle.js"
+        ]
+      }
+    }
+  },
+  "index.html": "index.html",
+  "init.jpg": "init.jpg",
+  "main.js": "1.0.0.main.bundle.js",
+  "opensource.jpg": "opensource.jpg",
+  "pet-projects.jpg": "pet-projects.jpg",
+  "procrastination.jpg": "procrastination.jpg",
+  "roboto-all-300-normal.woff": "d8341d4e2ae00ca565ff.woff",
+  "roboto-all-400-normal.woff": "bef62ef324d2651f34f5.woff",
+  "roboto-all-500-normal.woff": "fafa0d357d24b92a0eab.woff",
+  "roboto-all-700-normal.woff": "b3bd46abad6aed7d1fe1.woff",
+  "roboto-cyrillic-300-normal.woff2": "d958749e36a2539a15e6.woff2",
+  "roboto-cyrillic-400-normal.woff2": "d99e8509d0fb82468cd4.woff2",
+  "roboto-cyrillic-500-normal.woff2": "202d900e22503d8b0252.woff2",
+  "roboto-cyrillic-700-normal.woff2": "4295162cddb2224d074b.woff2",
+  "roboto-cyrillic-ext-300-normal.woff2": "810ed0c45d0f3efdcf02.woff2",
+  "roboto-cyrillic-ext-400-normal.woff2": "6207bdf658c5df65ec26.woff2",
+  "roboto-cyrillic-ext-500-normal.woff2": "767e88fc71229a6b3818.woff2",
+  "roboto-cyrillic-ext-700-normal.woff2": "ad4db50c48faafed6e47.woff2",
+  "roboto-greek-300-normal.woff2": "46ec6a07f2a54406745b.woff2",
+  "roboto-greek-400-normal.woff2": "67dc4fcb5e271518684c.woff2",
+  "roboto-greek-500-normal.woff2": "4a7ddb24c5ce23ab924b.woff2",
+  "roboto-greek-700-normal.woff2": "397c0eb88e63178bc7bf.woff2",
+  "roboto-greek-ext-300-normal.woff2": "de24db642a43e0f38e95.woff2",
+  "roboto-greek-ext-400-normal.woff2": "6ac85ac6060d11c9855d.woff2",
+  "roboto-greek-ext-500-normal.woff2": "eb75ab7d69a149e69b5b.woff2",
+  "roboto-greek-ext-700-normal.woff2": "2e8497911e421b97c881.woff2",
+  "roboto-latin-300-normal.woff2": "be4840e2129105365c75.woff2",
+  "roboto-latin-400-normal.woff2": "47ff671789516a7f0561.woff2",
+  "roboto-latin-500-normal.woff2": "6d08531389398403c965.woff2",
+  "roboto-latin-700-normal.woff2": "0d0c0711489df92f6ebe.woff2",
+  "roboto-latin-ext-300-normal.woff2": "a03317af61258e6c44b3.woff2",
+  "roboto-latin-ext-400-normal.woff2": "b38f950f21bb1bad70d0.woff2",
+  "roboto-latin-ext-500-normal.woff2": "693f967d01d870c8706d.woff2",
+  "roboto-latin-ext-700-normal.woff2": "7af344330efd68b8b132.woff2",
+  "roboto-vietnamese-300-normal.woff2": "751aea8b7b4ba3be9981.woff2",
+  "roboto-vietnamese-400-normal.woff2": "814a60100c811c57338a.woff2",
+  "roboto-vietnamese-500-normal.woff2": "8481261cdc2d92c54dd5.woff2",
+  "roboto-vietnamese-700-normal.woff2": "41741b3524b0c5c86480.woff2",
+  "ruopen.jpg": "ruopen.jpg",
+  "shot-in-the-leg.jpg": "shot-in-the-leg.jpg",
+  "softskills.jpg": "softskills.jpg"
+}
