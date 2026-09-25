@@ -4,26 +4,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AI DJ Fly — оцифрованный мозг мухи подбирает музыку</title>
-    <meta name="description" content="Черновик проекта AI DJ Fly: коннектом мухи, обученный подбирать треки под темп, настроение и другие требования к музыке.">
+    <meta name="description" content="AI DJ Fly: коннектор мухи, обученный подбирать треки под темп, настроение и другие требования к музыке.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://octav47.github.io/ai-dj-fly/">
 
     <meta property="og:type" content="website">
     <meta property="og:locale" content="ru_RU">
     <meta property="og:title" content="AI DJ Fly — оцифрованный мозг мухи подбирает музыку">
-    <meta property="og:description" content="Черновик проекта: коннектом мухи, который учится быть диджеем и собирать музыку под заданные требования.">
+    <meta property="og:description" content="Коннектор мухи, который учится быть диджеем и собирать музыку под заданные требования.">
     <meta property="og:url" content="https://octav47.github.io/ai-dj-fly/">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="AI DJ Fly — оцифрованный мозг мухи подбирает музыку">
-    <meta name="twitter:description" content="Черновик проекта: коннектом мухи, который учится быть диджеем и собирать музыку под заданные требования.">
+    <meta name="twitter:description" content="Коннектор мухи, который учится быть диджеем и собирать музыку под заданные требования.">
 
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "AI DJ Fly — оцифрованный мозг мухи подбирает музыку",
-        "description": "Черновик проекта AI DJ Fly: коннектом мухи, обученный подбирать треки под темп, настроение и другие требования к музыке.",
+        "description": "AI DJ Fly: коннектор мухи, обученный подбирать треки под темп, настроение и другие требования к музыке.",
         "inLanguage": "ru",
         "url": "https://octav47.github.io/ai-dj-fly/"
     }
@@ -113,11 +113,60 @@
             font-size: 0.85rem;
             color: var(--muted);
         }
+
+        .toast {
+            position: fixed;
+            left: 50%;
+            bottom: 1.5rem;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            gap: 0.65rem;
+            width: min(22rem, calc(100% - 2rem));
+            margin: 0;
+            padding: 0.9rem 1rem 0.85rem;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            background: #121820;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+            font-family: ui-sans-serif, system-ui, sans-serif;
+            font-size: 0.95rem;
+            color: var(--text);
+            transform: translateX(-50%) translateY(1rem);
+            opacity: 0;
+            animation: toast-in 0.45s ease forwards;
+        }
+
+        .toast-bar {
+            height: 3px;
+            border-radius: 999px;
+            background: var(--line);
+            overflow: hidden;
+        }
+
+        .toast-bar span {
+            display: block;
+            height: 100%;
+            width: 100%;
+            background: var(--accent);
+            transform-origin: left center;
+            animation: toast-countdown 5s linear forwards;
+        }
+
+        @keyframes toast-in {
+            to {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+
+        @keyframes toast-countdown {
+            to { transform: scaleX(0); }
+        }
     </style>
 </head>
 <body>
 <main>
-    <p class="kicker">Черновик · заглушки</p>
     <h1>AI DJ Fly</h1>
     <p class="lead">Проект, в котором оцифрованный мозг мухи учится быть диджеем: слушать требования к сету и подбирать под них музыку.</p>
 
@@ -141,9 +190,32 @@
             <p>Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat.</p>
         </div>
     </section>
-
-    <footer>AI DJ Fly · страница-заглушка</footer>
 </main>
+<div class="toast" role="status" aria-live="polite">
+    <span id="toast-text">Перенаправление через 5 секунд...</span>
+    <div class="toast-bar" aria-hidden="true"><span></span></div>
+</div>
+<script>
+    (function () {
+        var left = 5;
+        var node = document.getElementById("toast-text");
+        var timer = setInterval(function () {
+            left -= 1;
+            if (left <= 0) {
+                clearInterval(timer);
+                node.textContent = "Перенаправление...";
+
+                setTimeout(() => {
+                  window.location.href = 'https://radiohustle.online/player-pro';
+                }, 1000);
+
+                return;
+            }
+            var word = left === 1 ? "секунду" : "секунды";
+            node.textContent = "Перенаправление через " + left + " " + word + "...";
+        }, 1000);
+    })();
+</script>
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
